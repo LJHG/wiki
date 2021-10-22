@@ -1,13 +1,6 @@
-# Table of contents
+# Summary
 
-* [Welcome!](README.md)
+* [Introduction](README.md)
+* [算法](./algorithms/README.md)
+  * [DFS](./algorithms/DFS/Leetcode199.md)
 
-## The Company
-
-* [Vision and Values](the-company/vision-and-values.md)
-* [Meet the Team!](the-company/meet-the-team.md)
-
-## The Formal Stuff
-
-* [Requesting Time Off](the-formal-stuff/requesting-time-off.md)
-* [Filing Expenses](the-formal-stuff/filing-expenses.md)

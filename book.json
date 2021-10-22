@@ -1,0 +1,16 @@
+{
+    "links" : {
+        "sidebar" : {
+            "Personal Book" : "http://www.gtwteam.com"
+        }
+    },
+    "plugins": [
+        "livereload",
+        "github"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/LJHG"
+        }
+    }
+}

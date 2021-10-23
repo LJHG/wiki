@@ -12,9 +12,9 @@ tags: [dfs,回溯]
 空白格用 '.' 表示。
 
 ## 示例：   
-{% codeblock %}
+```
 解就完事了
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
@@ -25,7 +25,7 @@ tags: [dfs,回溯]
 我专门编写了一个findPos函数来每次都去查找第一个没有填的位置(其实也没必要，后面就知道了)。  
 我还编写了一个isFull函数来看当前的数独是否填满了。(其实也没必要，后面就知道了)。  
 虽然很多没有必要，但是回溯至少是没毛病的，💪。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int flag[10];
@@ -121,12 +121,12 @@ public:
         
     }
 };
-{% endcodeblock %}
+```
 
 ### check啥呀，不用check啊(48ms)
 每一次dfs都去check一下真的很费时间，所以如果能够把check去掉，岂不美哉。  
 是可以的，我们可以记录每一行，每一列，每一个block可以填的数字序列，然后在填'.'的时候只填那些满足条件的数字不就行了么。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int flag[10];
@@ -195,13 +195,13 @@ public:
         board = ans; 
     }
 };
-{% endcodeblock %}
+```
 
 ### 也别判full了，别findPos了，带上位置一起dfs吧(8ms)
 进一步想，一直判满和找第一个'.'的位置不也挺奇怪的吗。  
 然后想到这个这种dfs其实是可以按顺序一个一个走的，类比组合数的一个一个位置判断取不取，八皇后的一行一行来。。。。  
 所以我们可以带上位置dfs，满就是走到最后一个位置，findPos也没必要了，毕竟我都是一个一个走下来的。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<vector<char>> ans;
@@ -254,7 +254,7 @@ public:
         board = ans; 
     }
 };
-{% endcodeblock %}
+```
 
 这道题还可以做一些更nb的优化，这里就就不多说了。  
 

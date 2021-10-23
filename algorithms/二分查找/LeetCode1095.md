@@ -3,7 +3,7 @@ title: 山顶数组中查找目标值(二分法) --LeetCode1095
 date: 2020-04-29 17:14:45
 tags: [二分, BinarySerach]
 ---
-### 题目描述：  
+## 题目描述：  
 （这是一个 交互式问题 ）
 
 给你一个 山脉数组 mountainArr，请你返回能够使得 mountainArr.get(index) 等于 target 最小 的下标 index 值。

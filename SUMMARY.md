@@ -60,6 +60,13 @@
     * [LeetCode 146](algorithms/链表/LeetCode146.md)
     * [LeetCode 202](algorithms/链表/LeetCode202.md)
     * [LeetCode 287](algorithms/链表/LeetCode287.md)
+  * [智力题](algorithms/智力题/README.md)
+    * [LeetCode 134](algorithms/智力题/LeetCode134.md)
+    * [LeetCode 1025](algorithms/智力题/LeetCode1025.md)
+    * [LeetCode 5413](algorithms/智力题/LeetCode5413.md)
+    * [LeetCode 5414](algorithms/智力题/LeetCode5414.md)
+    * [LeetCode 5476](algorithms/智力题/LeetCode5476.md)
+  * 
   
 
   

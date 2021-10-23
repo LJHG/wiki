@@ -1,6 +1,12 @@
 # Summary
 
 * [Introduction](README.md)
+* [机器学习](ML/README.md)
+  * [KNN计算的三种姿势](ML/knn-distance-computing.md)
+* [深度学习](DL/README.md)
+  * [batch与并行计算速度的讨论](DL/batch-and-speed.md)
+  * [我的本科毕设-二值神经网络](DL/bnndemo.md)
+* [后端开发](backend/README.md)
 * [算法](./algorithms/README.md)
   * [动态规划](algorithms/动态规划/README.md)
     * [LCP13](algorithms/动态规划/LCP13.md)

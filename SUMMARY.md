@@ -28,5 +28,14 @@
     * [LeetCode 69](algorithms/二分查找/LeetCode69.md)
     * [LeetCode 167](algorithms/二分查找/LeetCode167.md)
     * [LeetCode 1095](algorithms/二分查找/LeetCode1095.md)
+  * [排列组合](algorithms/排列组合/README.md)
+    * [LeetCode 31](algorithms/排列组合/LeetCode31.md)
+    * [LeetCode 39](algorithms/排列组合/LeetCode39.md)
+    * [LeetCode 40](algorithms/排列组合/LeetCode40.md)
+    * [LeetCode 47](algorithms/排列组合/LeetCode47.md)
+    * [LeetCode 60](algorithms/排列组合/LeetCode60.md)
+    * [LeetCode 77](algorithms/排列组合/LeetCode77.md)
+    * [LeetCode 216](algorithms/排列组合/LeetCode216.md)
+    * [LeetCode 419](algorithms/排列组合/LeetCode491.md)
   
 

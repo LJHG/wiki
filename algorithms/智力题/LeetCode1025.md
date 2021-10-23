@@ -13,7 +13,7 @@ tags: [分析]
 只有在爱丽丝在游戏中取得胜利时才返回 True，否则返回 false。假设两个玩家都以最佳状态参与游戏。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例 1：
 输入：2
 输出：true
@@ -24,7 +24,7 @@ tags: [分析]
 输出：false
 解释：爱丽丝选择 1，鲍勃也选择 1，然后爱丽丝无法进行操作。
 
-{% endcodeblock %}
+```
 <!-- more -->
 ## 解题思路:  
 这道题看起来很唬人，其实就是一道找规律的题。  
@@ -38,14 +38,14 @@ tags: [分析]
 
 找规律还是挺有意思的，这道题还可以用dp做，但好像没必要，就不想了。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     bool divisorGame(int N) {
         return (N%2 == 0);
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/divisor-game/

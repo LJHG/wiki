@@ -10,7 +10,7 @@ tags: [双序列dp]
 
 <!-- more -->
 ## 示例：   
-{% codeblock %}
+```cpp
 示例 1：
 输入：nums1 = [2,1,-2,5], nums2 = [3,0,-6]
 输出：18
@@ -33,14 +33,14 @@ tags: [双序列dp]
 1 <= nums1.length, nums2.length <= 500
 -1000 <= nums1[i], nums2[i] <= 100
 
-{% endcodeblock %}
+```
 
 ## 解题思路:  
 记录一下双序列dp，当时直接写没写出来，看了解答后发现也不是很难。  
 这个题和最大公共子序列，和那个编辑距离（还没做过）貌似很像，像这种双序列的dp一般是有套路的，都是像下面那种，**dp[i][j] = max(dp[i-1][j-1]+xxx, dp[i][j-1], dp[i-1][j])** 这种的吧。   
 算是在leetcode上第一次碰到这种类型吧，记录一下。
 
-{% codeblock lang:cpp %}
+```cpp
 const int MAXN = 550;
 class Solution {
 public:
@@ -70,7 +70,7 @@ public:
         return dp[length1-1][length2-1];   
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/max-dot-product-of-two-subsequences/

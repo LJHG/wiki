@@ -11,13 +11,13 @@ text 中的每个单词都用单个空格分隔。
 请同样按上述格式返回新的句子。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 示例 1：
 输入：text = "Leetcode is cool"
 输出："Is cool leetcode"
 解释：句子中共有 3 个单词，长度为 8 的 "Leetcode" ，长度为 2 的 "is" 以及长度为 4 的 "cool" 。
 输出需要按单词的长度升序排列，新句子中的第一个单词首字母需要大写。
-{% endcodeblock %}
+```
 <!-- more -->
 
 ### 解题思路:  
@@ -27,7 +27,7 @@ text 中的每个单词都用单个空格分隔。
 明显这道题O(N²)是不行了，然后我就放弃了。    
 下面展示正确解法（看的别人的）：建一个长度vector和一个下标vector，然后对下标vector进行排序，这样的话自己写cmp时，就既有长度信息，又有位置信息了(妙啊)。
 
-{% codeblock lang:cpp %}
+```cpp
 vector<int> lenv;
 vector<int> indexv;
  bool cmp(int a,int b)
@@ -87,7 +87,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/rearrange-words-in-a-sentence/

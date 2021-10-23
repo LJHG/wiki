@@ -11,7 +11,7 @@ tags: [二叉树, tree, BST, DFS, 中序遍历]
 所有左子树和右子树自身必须也是二叉搜索树。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 示例 1:
 输入:
     2
@@ -30,7 +30,7 @@ tags: [二叉树, tree, BST, DFS, 中序遍历]
 解释: 输入为: [5,1,4,null,null,3,6]。
      根节点的值为 5 ，但是其右子节点值为 4 。
 
-{% endcodeblock %}
+```
 <!--more-->
 ### 解题思路:  
 这里给两个解题思路，一个是递归(dfs),另一个是中序遍历
@@ -42,7 +42,7 @@ tags: [二叉树, tree, BST, DFS, 中序遍历]
 2. 如果是右子树，那么下界就是根节点的值，上界就是根节点的上界。
 把这些捋明白了，就很好写了。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     bool judgeCurrentNode(TreeNode* root,long long  upper, long long  lower)
@@ -55,7 +55,7 @@ public:
         return judgeCurrentNode(root,LONG_MAX,LONG_MIN);
     }
 };
-{% endcodeblock %}
+```
 
 <br/>
 
@@ -63,7 +63,7 @@ public:
 ### 中序遍历
 对树进行中序遍历，如果不是递增，就return false
 
-{% codeblock lang:cpp %}
+```cpp
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -102,7 +102,7 @@ public:
     }
 };
 
-{% endcodeblock %}
+```
 
 
 ### 题目链接：  

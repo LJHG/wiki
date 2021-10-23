@@ -7,7 +7,7 @@ tags: [全排列,哈希去重]
 给定一个整型数组, 你的任务是找到所有该数组的递增子序列，递增子序列的长度至少是2。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例:
 输入: [4, 6, 7, 7]
 输出: [[4, 6], [4, 7], [4, 6, 7], [4, 6, 7, 7], [6, 7], [6, 7, 7], [7,7], [4,7,7]]
@@ -15,7 +15,7 @@ tags: [全排列,哈希去重]
 给定数组的长度不会超过15。
 数组中的整数范围是 [-100,100]。
 给定数组中可能包含重复数字，相等的数字应该被视为递增的一种情况。
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
@@ -27,7 +27,7 @@ tags: [全排列,哈希去重]
 dp[i][j] = Σ(dp[i][k-1] 拼上 k  + k拼上dp[k+1][j] + dp[i][k-1]拼上dp[k+1][j])  
 贴下代码(写完一看，下面的循环都多少层了orz，这一看就过不了啊23333)
 但是这里用的set去重，如果是用的哈希，或许能过，不过dp还是算了吧，跟全排列比起来还是太慢了  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<vector<int>> findSubsequences(vector<int>& nums) {
@@ -131,12 +131,12 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 全排列
 因为长度只有15，所以其实一共也就2^15种情况，不多，直接暴力枚举  
 枚举完了需要去重，官方的题解是用的一个[很高级的哈希函数](https://leetcode-cn.com/problems/increasing-subsequences/solution/di-zeng-zi-xu-lie-by-leetcode-solution/)来映射的(这方法很牛逼，本来这个哈希才是这道题的精髓，不过对于我来说，全排列也很精髓了2333)，我这里就直接用set来去重了，效率不高，勉强过了。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<vector<int>> findSubsequences(vector<int>& nums) {
@@ -171,9 +171,9 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 还可以用dfs的方式来进行枚举，大同小异
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int len;
@@ -213,6 +213,6 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 ## 题目链接：  
 https://leetcode-cn.com/problems/increasing-subsequences/

@@ -7,7 +7,7 @@ tags: [回文串, dp, 马拉车算法]
 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 示例 1：
 输入: "babad"
 输出: "bab"
@@ -16,7 +16,7 @@ tags: [回文串, dp, 马拉车算法]
 示例 2：
 输入: "cbbd"
 输出: "bb"
-{% endcodeblock %}
+```
 
 ### 解题思路:  
 这里给三个解题思路，分别是中心展开，dp，和马拉车  
@@ -24,7 +24,7 @@ tags: [回文串, dp, 马拉车算法]
 ### 中心展开
 暴力对每一个位置进行展开看回文，为了避免偶回文，对字符串做了预处理
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     string longestPalindrome(string s) {
@@ -83,7 +83,7 @@ public:
        return realAns;
     }
 };
-{% endcodeblock %}
+```
 <br/>
 <br/>
 <br/> 
@@ -93,7 +93,7 @@ public:
 递推公式 dp[i][j] = dp[i+1][j-1] ==1 && s[i]==s[j]  
 注意两层循环，表示回文串长度的循环要放外面，不然就不对，因为这样可能在index为0时，会错过长度为4的回文，因为后面还没弄过。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     string longestPalindrome(string s) {
@@ -141,7 +141,7 @@ public:
     }
 };
 
-{% endcodeblock %}
+```
 <br/>
 <br/>
 <br/> 
@@ -155,7 +155,7 @@ https://www.bilibili.com/video/BV1ft4y117a4
 马拉车算法维护了一个最右回文子串，当对一个字符串从左到右进行遍历求d[i]时，如果i在最右回文子串中，就可以利用对称性来为d[i]初始化一个值，然后再中心展开，不然就直接中心展开。  
 最后得出结果时，可以发现，最终的回文串长度就是d[i]-1，最终的最长回文串在原始字符串中的起始index，就是修改后字符串中，(d[i]最大的index - d[i])/2  
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     struct tarStringInfo{
@@ -227,7 +227,7 @@ public:
         return s.substr(ans.index,ans.length);    
     }
 };
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/longest-palindromic-substring/

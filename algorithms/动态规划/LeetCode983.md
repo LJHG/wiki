@@ -16,7 +16,7 @@ tags: [dp]
 返回你想要完成在给定的列表 days 中列出的每一天的旅行所需要的最低消费。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 示例 1：
 输入：days = [1,4,6,7,8,20], costs = [2,7,15]
 输出：11
@@ -42,13 +42,13 @@ tags: [dp]
 days 按顺序严格递增
 costs.length == 3
 1 <= costs[i] <= 1000
-{% endcodeblock %}
+```
 
 <!--more-->
 ### 解题思路:  
 对每一个days里存在的天数进行dp，并在那一天进行买票（这里我默认只在days里有的天数买票，没有去考虑在其它天买票的情况，不知道有没有问题），并求出这一天买票cost最小的情况。当对某一天买了某一种票过后，在范围内的都不用买票，往后遍历，直到遇到第一个dp[k]不是0的，加上就是当前票的花费情况。(说的不清楚，看代码更清楚)
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int mincostTickets(vector<int>& days, vector<int>& costs) {
@@ -117,7 +117,7 @@ public:
         return dp[days[0]];
     }
 };
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/minimum-cost-for-tickets/

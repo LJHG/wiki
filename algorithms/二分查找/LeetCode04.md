@@ -9,7 +9,7 @@ tags: [二分]
 你可以假设 nums1 和 nums2 不会同时为空。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例 1:
 nums1 = [1, 3]
 nums2 = [2]
@@ -19,7 +19,7 @@ nums2 = [2]
 nums1 = [1, 2]
 nums2 = [3, 4]
 则中位数是 (2 + 3)/2 = 2.5
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
@@ -27,7 +27,7 @@ nums2 = [3, 4]
 这道题首先要把问题进行一个转换，要找到中位数实际上就是要找到第k个数，这里的k是 (length1+length2+1)/2 和 (length1+length2+2)/2，这里之所以要取两个k是因为奇数个数的中位数和偶数个数的中位数可以通过这种方法来进行一个统一。在奇数的情况下，(length1+length2+1)/2和(length1+length2+2)/2是相同的，在偶数的情况下，(length1+length2+1)/2和(length1+length2+2)/2就是中间的那两个数。所以两个加起来除以2就是最终答案。  
 知道了这道题的本质就是找到第k个数后，就可以开始二分了。这道题的二分非常巧妙，就是拿两个数组的第k/2个数进行比较，小的那个数组的第k/2个数以及前面的全部数都不可能是第k个数了，所以就把前面舍去(就是更新offset)，然后更新k，最后就相当于两个新的数组，找到新的第k个数(递归)。(这里面涉及了非常多的边界判定，说不清楚了，具体的见注释吧。)
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int findKSmallestNum(vector<int>& nums1, vector<int>& nums2, int offset1,int offset2,int k)
@@ -109,7 +109,7 @@ public:
     }
         
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/median-of-two-sorted-arrays/

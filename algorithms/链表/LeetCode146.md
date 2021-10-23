@@ -11,7 +11,7 @@ tags: [哈希, 链表]
 你是否可以在 O(1) 时间复杂度内完成这两种操作？
 
 ## 示例：   
-{% codeblock %}
+```cpp
 LRUCache cache = new LRUCache( 2 /* 缓存容量 */ );
 cache.put(1, 1);
 cache.put(2, 2);
@@ -22,14 +22,14 @@ cache.put(4, 4);    // 该操作会使得密钥 1 作废
 cache.get(1);       // 返回 -1 (未找到)
 cache.get(3);       // 返回  3
 cache.get(4);       // 返回  4
-{% endcodeblock %}
+```
 <!-- more -->
 ## 解题思路:  
 这道题注意要各种分类讨论的细节，即先分为Key是否在当前缓存中，如果在，就直接改，如果不在，还要看当前是否已经到达了最大capacity，没到就直接加，到了就要加+删。  
 这道题我还是说两个解法吧，虽然第一个不是O1，但也是我第一个想到的方法，第二方法就是O1了。
 ### 不是O(1)的做法
 用两个map，一个就是直接存键值对，另一个存键-时间对，然后每次去遍历看哪个键的时间最小。
-{% codeblock lang:cpp %}
+```cpp
 class LRUCache {
 public:
     map<int,int> record; //使用一个map来记录键值
@@ -118,14 +118,14 @@ public:
  * int param_1 = obj->get(key);
  * obj->put(key,value);
  */
-{% endcodeblock %}
+```
 
 </br>
 
 ### O(1)做法
 O(1)做法使用的是哈希表+双向链表，这次的双向链表比起以前写链表感觉要简单了许多，主要是要先把虚拟节点创好，这样就十分方便。  
 在这个方法中，哈希表存得是key-节点指针，双向链表可以用来表示一个key的优先度，最近被使用的在表头，最久不被使用的在表尾巴，双向链表将一个节点移动到表头，添加节点到表头，从表尾删除节点都是O(1)，就非常适合这道题。
-{% codeblock lang:cpp %}
+```cpp
 struct Node{
     int key;
     int val;
@@ -239,7 +239,7 @@ public:
  * int param_1 = obj->get(key);
  * obj->put(key,value);
  */
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/lru-cache/

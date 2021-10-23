@@ -7,7 +7,7 @@ tags: [dp, 矩阵]
 在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 输入: 
 1 0 1 0 0
 1 0 1 1 1
@@ -15,7 +15,7 @@ tags: [dp, 矩阵]
 1 0 0 1 0
 
 输出: 4
-{% endcodeblock %}
+```
 
 
 ### 解题思路:  
@@ -28,7 +28,7 @@ tags: [dp, 矩阵]
 ![2](/images/LeetCode221_2.png)  
 递推公式为 dp[i][j] = min(dp[i-1][j],dp[i][j-1],dp[i-1][j-1])+1  
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int MAXN = 1e3;
@@ -66,7 +66,7 @@ public:
         return ans*ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/maximal-square/

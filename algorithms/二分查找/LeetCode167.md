@@ -12,18 +12,18 @@ tags: [二分,双指针]
 你可以假设每个输入只对应唯一的答案，而且你不可以重复使用相同的元素。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 输入: numbers = [2, 7, 11, 15], target = 9
 输出: [1,2]
 解释: 2 与 7 之和等于目标数 9 。因此 index1 = 1, index2 = 2 
-{% endcodeblock %}
+```
 
 ## 解题思路:  
 ### 二分
 看到了有序基本上就是要二分了，最开始我还天真地试了一发遍历O(n²)，果不其然超时了。
 二分也没什么好说的，就是固定左边的index，去找右边的那个值。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
 
@@ -57,14 +57,14 @@ public:
             return ans;
         }
 };
-{% endcodeblock %}
+```
 
 ### 双指针 
 这道题双指针的的写法很简单，就是指针分别指向左右，如果当前值小了，就移动左指针；如果当前值大了，就移动右指针。  
 方法很简单，但我觉得该方法的证明还挺巧妙的。  
 [证明见官方题解](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/solution/liang-shu-zhi-he-ii-shu-ru-you-xu-shu-zu-by-leet-2/)
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
@@ -86,7 +86,7 @@ public:
         }
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/

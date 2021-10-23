@@ -7,7 +7,7 @@ tags: [二叉树,二叉搜索树]
 给定一个整数 n，生成所有由 1 ... n 为节点所组成的 二叉搜索树 。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 输入：3
 输出：
 [
@@ -25,7 +25,7 @@ tags: [二叉树,二叉搜索树]
      3     2     1      1   3      2
     /     /       \                 \
    2     1         2                 3
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
@@ -33,7 +33,7 @@ tags: [二叉树,二叉搜索树]
 这道题明显是递归，反正就是在一次递归里不断选择根，然后由根可以分出左子树和右子树，然后左子树和右子树又以这种方法来生成新的"树组"。  
 需要注意的是在递归判断返回时，也就是说当left>right时，需要往vector中push一个nullptr，不然后面在某个子树中就遍历不到nullptr这个元素(null也是一种情况，所以需要被遍历！)。
 
-{% codeblock lang:cpp %}
+```cpp
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -79,7 +79,7 @@ public:
         return getTrees(1,n);
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/unique-binary-search-trees-ii/

@@ -7,7 +7,7 @@ tags: [排列,dfs,回溯,剪枝,去重]
 给定一个可包含重复数字的序列，返回所有不重复的全排列。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 输入: [1,1,2]
 输出:
 [
@@ -15,7 +15,7 @@ tags: [排列,dfs,回溯,剪枝,去重]
   [1,2,1],
   [2,1,1]
 ]
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
@@ -23,7 +23,7 @@ tags: [排列,dfs,回溯,剪枝,去重]
 
 ### set去重
 万能的set去重，就是效率低了点。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     set<vector<int>> ans;
@@ -58,13 +58,13 @@ public:
         return vans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 同一层不选择相同数字
 这个应该就是这道题的核心去重方法了，就是说在同一层是(比如选择第一个数字时)，如果有相同的数字，那么就不选，然后就行了，就这么简单。  
 我在记录时，是开了一个数组叫做choicesInLayer,最开始开成全局数组了，以为每一次memset一下就好了，结果是个深坑，稍微想一想就知道怎么可能是开全局数组啊，然后改成局部的就过了(搞得我还以为是算法除了啥问题)。  
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<vector<int>> ans;
@@ -101,6 +101,6 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 ## 题目链接：  
 https://leetcode-cn.com/problems/permutations-ii/

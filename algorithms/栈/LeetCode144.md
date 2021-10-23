@@ -7,7 +7,7 @@ tags: [栈,Stack]
 给定一个二叉树，返回它的 前序 遍历。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例:
 输入: [1,null,2,3]  
    1
@@ -17,14 +17,14 @@ tags: [栈,Stack]
    3 
 
 输出: [1,2,3]
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
 好久没写博客了，或者说好久没写leetcode了= =，来水一发。  
 水题，两种方法，一个递归，一个迭代。
 ### 递归
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<int> ans;
@@ -40,11 +40,11 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 迭代
 迭代时使用的是栈，要注意，栈是先push右边，再push左边，因为需要在pop时先pop左边，再pop右边。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<int> preorderTraversal(TreeNode* root) {
@@ -62,7 +62,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/binary-tree-preorder-traversal/

@@ -13,7 +13,7 @@ tags: [周赛186, 前缀和, 后缀和, 不要乱用dp]
 给你一个整数数组 cardPoints 和整数 k，请你返回可以获得的最大点数。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 示例 1：
 
 输入：cardPoints = [1,2,3,4,5,6,1], k = 3
@@ -45,7 +45,7 @@ tags: [周赛186, 前缀和, 后缀和, 不要乱用dp]
 1 <= cardPoints.length <= 10^5
 1 <= cardPoints[i] <= 10^4
 1 <= k <= cardPoints.length
-{% endcodeblock %}
+```
 
 ### 解题思路:  
 最近看到什么题都想用dp，然后都无一例外的。。。炸内存超时了，笑死。  
@@ -55,7 +55,7 @@ tags: [周赛186, 前缀和, 后缀和, 不要乱用dp]
 
 
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int maxScore(vector<int>& cardPoints, int k) {
@@ -77,13 +77,13 @@ public:
         return max;
     }
 };
-{% endcodeblock %}
+```
 
 <br/>
 <br/>
 
 再来展示一下错误示范，当我看到这道题时，第一反应就是，ok，给了个区间，ok,有一个动态变化的k，ok可以dp了，于是就直接搞了个三维dp。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int maxScore(vector<int>& cardPoints, int k) {
@@ -115,7 +115,7 @@ public:
         return dp[0][length-1][k];
     }
 };
-{% endcodeblock %}
+```
 
 以后别这么搞了，233
 

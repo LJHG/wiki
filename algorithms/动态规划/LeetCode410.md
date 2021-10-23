@@ -13,7 +13,7 @@ tags: [动态规划,dp]
 
 
 ## 示例：   
-{% codeblock %}
+```cpp
 输入:
 nums = [7,2,5,10,8]
 m = 2
@@ -25,7 +25,7 @@ m = 2
 一共有四种方法将nums分割为2个子数组。
 其中最好的方式是将其分为[7,2,5] 和 [10,8]，
 因为此时这两个子数组各自的和的最大值为18，在所有情况中最小。
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
@@ -34,7 +34,7 @@ m = 2
 dp[x][m]表示从位置x开始到最后分为m个子数组的最小最大值，之前也想过用dp[x][y][m]这种用来表示从位置x到y划分为m个子数组，但其实根本没有必要。仔细想一想，根本不会出现这种情况，因为我们对于一个数组，可以认为是选择一个位置切一刀，然后剩下的丢给后面，也就是说，切很多刀的情况，只会出现在(x,n)的子数组里。这里想明白了，就可以开始dp了。这道题还用了前缀和什么的，很简单，就不多说了。  
 状态转移方程： dp[i][m] = min(dp[i][m],max(prefix[j]-prefix[i-1],dp[j+1][m-1]))
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int splitArray(vector<int>& nums, int m) {
@@ -77,7 +77,7 @@ public:
         return dp[0][m];
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/split-array-largest-sum/

@@ -8,7 +8,7 @@ tags: [博弈,递归,动态规划,dp,dfs]
 给定一个表示分数的数组，预测玩家1是否会成为赢家。你可以假设每个玩家的玩法都会使他的分数最大化。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例 1：
 输入：[1, 5, 2]
 输出：False
@@ -22,7 +22,7 @@ tags: [博弈,递归,动态规划,dp,dfs]
 输出：True
 解释：玩家 1 一开始选择 1 。然后玩家 2 必须从 5 和 7 中进行选择。无论玩家 2 选择了哪个，玩家 1 都可以选择 233 。
      最终，玩家 1（234 分）比玩家 2（12 分）获得更多的分数，所以返回 True，表示玩家 1 可以成为赢家。
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路: 
@@ -31,7 +31,7 @@ tags: [博弈,递归,动态规划,dp,dfs]
 ### dfs
 其实isA这个可传可不传哈，因为可以根据长度来判断当前是A还是B，下面DP就是这么弄的。  
 **要注意是A在操作和B在操作时的不同return**。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int dfs(bool isA,int start,int end,vector<int>& nums,int gap){
@@ -48,11 +48,11 @@ public:
         return dfs(true,0,nums.size()-1,nums,0)>=0;
     }
 };
-{% endcodeblock %}
+```
 
 ### 动态规划
 dp也就没什么好说的了，就是把dfs倒过来写一遍就行了。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     bool PredictTheWinner(vector<int>& nums) {
@@ -81,11 +81,11 @@ public:
         return dp[0][len-1]>=0;
     }
 };
-{% endcodeblock %}
+```
 
 ### 贪 心 的 大 失 败
 无脑贪心不可取，这里想的是拿左右端点的值去和左+1右-1比，然后巴拉巴拉。。。这只是局部最优啊，不过居然还过了不少的样例。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     
@@ -145,7 +145,7 @@ public:
         return ansA>=ansB;
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/predict-the-winner/

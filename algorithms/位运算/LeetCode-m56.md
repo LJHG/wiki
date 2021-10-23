@@ -8,7 +8,7 @@ tags: [位运算, 亦或]
 
 
 ### 示例：   
-{% codeblock %}
+```cpp
 示例 1：
 
 输入：nums = [4,1,4,6]
@@ -23,7 +23,7 @@ tags: [位运算, 亦或]
 
 2 <= nums <= 10000
 
-{% endcodeblock %}
+```
 
 ### 解题思路:  
 给两个解法，一个是排序后找只出现了一次的，还有一个是用亦或运算，其实应该还可以用哈希映射来做，但空间复杂度有点高。这道题和joma那个视频不是很像吗2333。
@@ -31,7 +31,7 @@ tags: [位运算, 亦或]
 ### 排序后找只出现了一次的
 排序后如果出现了两次的会相邻，根据这个特性，遍历一次就可以找出只出现了一次的
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<int> singleNumbers(vector<int>& nums) {
@@ -59,7 +59,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 <br/>
 <br/>
@@ -68,7 +68,7 @@ public:
 只出现过一次的数字，可以通过亦或找出来，但是这里有两个数字，所以找出来的结果是两个结果的抑或，所以需要将两个结果分开，分成两组，然后分别亦或找出结果。而要区别这两个结果，这两个数可以通过亦或结果里的1来区分，这里取最低位的1。  
 注意与运算和==运算的优先级，与要加括号。  
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int lowbit(int x)
@@ -104,7 +104,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/

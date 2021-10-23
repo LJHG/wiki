@@ -7,7 +7,7 @@ tags: [回文,马拉车]
 给定一个字符串 s，你可以通过在字符串前面添加字符将其转换为回文串。找到并返回可以用这种方式转换的最短回文串。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例 1:
 输入: "aacecaaa"
 输出: "aaacecaaa"
@@ -15,7 +15,7 @@ tags: [回文,马拉车]
 示例 2:
 输入: "abcd"
 输出: "dcbabcd"
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
@@ -23,7 +23,7 @@ tags: [回文,马拉车]
 这两种方法都说一下吧
 ### 中心展开
 中心展开的思想很简单，要让添加的字符最少，那么就是要在每一个位置中心展开，使之能够展开到开始位置并且长度最长，中心位置的选取只需要从(len-1)/2的位置往左取就行了。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     string getRidOfStar(string s){
@@ -75,11 +75,11 @@ public:
         return "";
     }
 };
-{% endcodeblock %}
+```
 
 ### 🐎拉🚗
 根据上面的分析可以看出，我们要求的东西就是一个从S[0]位置开始的最长回文串，那就可以直接马拉车了，需要稍微修改一下代码，就是在每一个i中心展开时，判断开始位置，并取所有开始位置为0的length的最大值就是从S[0]开始的回文串的最大长度
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
 struct tarStringInfo{
@@ -155,7 +155,7 @@ struct tarStringInfo{
         return rightStr+s;
     }
 };
-{% endcodeblock %}
+```
 ## 题目链接：  
 https://leetcode-cn.com/problems/shortest-palindrome/
 [一个总结的很好的题解](https://leetcode-cn.com/problems/shortest-palindrome/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by--44/)

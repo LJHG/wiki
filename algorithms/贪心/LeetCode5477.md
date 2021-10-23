@@ -10,10 +10,10 @@ tags: [贪心]
 主对角线指的是从 (1, 1) 到 (n, n) 的这些格子。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 输入：grid = [[0,0,1],[1,1,0],[1,0,0]]
 输出：3
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
@@ -22,7 +22,7 @@ tags: [贪心]
 这样想想还真的没毛病，最开始我还在想，会不会有本来有很多0的行去放到一个比较靠下的位置从而使得上面一个需要这么多0的行无行可选，这种情况是不可能的！因为是从上往下遍历的，所以一定会优先去满足上面的位置，也就是说，就算一个行把0最多的选了也没关系，因为它就是目前需要0最多的。  
 贪心的话，也没什么好证明的，就这样吧。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     void swap(int* mem,int i,int j){
@@ -70,7 +70,7 @@ public:
 
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/minimum-swaps-to-arrange-a-binary-grid/

@@ -10,7 +10,7 @@ tags: [前缀和]
 
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例  1：
 输入：nums = [1,-2,-3,4]
 输出：4
@@ -27,7 +27,7 @@ tags: [前缀和]
 输出：2
 解释：乘积为正数的最长子数组是 [-1,-2] 或者 [-2,-3] 。
 
-{% endcodeblock %}
+```
 <!-- more -->
 ## 解题思路:  
 第204次周赛翻车现场。  
@@ -40,7 +40,7 @@ tags: [前缀和]
 这道题有一个需要注意的地方就是0，有0存在后，不管怎么乘都是0，所以为了避开这个问题，我们可以让数组中不含零，方法就是按照0来分段。 
 最开始我写的代码如下：
 这个方法超时了，因为我在遍历前缀积数组时用了双重循环。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     
@@ -105,13 +105,13 @@ public:
         
     }
 };
-{% endcodeblock %}
+```
 
 双重循环可以，但没必要。  
 稍微一想就能想到，要求乘积最大长度，只有两个情况。
 1. 最后乘起来为正数，那么直接找到最靠后的前缀积为1的位置即可。
 2. 最后乘起来为负数，那么直接找到最右边的前缀积为-1和最前面前缀积为-1的位置即可。 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     
@@ -203,7 +203,7 @@ public:
         
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/maximum-length-of-subarray-with-positive-product/

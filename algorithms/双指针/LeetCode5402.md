@@ -9,7 +9,7 @@ tags: [滑动窗口, 双指针, two pointers, set]
 如果不存在满足条件的子数组，则返回 0 。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 示例 1：
     输入：nums = [8,2,4,7], limit = 4
     输出：2 
@@ -40,7 +40,7 @@ tags: [滑动窗口, 双指针, two pointers, set]
     1 <= nums[i] <= 10^9
     0 <= limit <= 10^9
 
-{% endcodeblock %}
+```
 <!--more-->
 
 ### 解题思路:  
@@ -49,7 +49,7 @@ tags: [滑动窗口, 双指针, two pointers, set]
 ### 暴力法
 就是对每个字符开始找最长，基本操作，这道题会TLE。(没错，我差点又做成DFS，疯了吧)。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int longestSubarray(vector<int>& nums, int limit) {
@@ -104,7 +104,7 @@ public:
 
     }
 };
-{% endcodeblock %}
+```
 
 <br/>
 
@@ -114,7 +114,7 @@ public:
 于是又看了一下，发现有用multiset的，这东西我第一次见，反正就是一个有序而且可以重复的set,amazing,于是就用了multiset。  
 plus，这次我对于滑动窗口的写法较之前做了很大的改进，之前是**移动了右边后，看是否满足要求，不然就左移直到满足要求**。现在看来根本没必要啊，**左移时，也可以同时右移**，因为求的是最大长度，所以没有必要在左移时不右移，这样求出来满足了要求也一定比之前的长度短。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int longestSubarray(vector<int>& nums, int limit) {
@@ -142,7 +142,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/

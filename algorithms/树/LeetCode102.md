@@ -7,7 +7,7 @@ tags: [树, bfs]
 给你一个二叉树，请你返回其按 层序遍历 得到的节点值。（即逐层地，从左到右访问所有节点）。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 示例：
 二叉树：[3,9,20,null,null,15,7],
     3
@@ -21,7 +21,7 @@ tags: [树, bfs]
   [9,20],
   [15,7]
 ]
-{% endcodeblock %}
+```
 <!-- more -->
 ### 解题思路:  
 昨天的题太水了，没更新，今天的稍微有一点写的价值吧(shuiyixia)。  
@@ -29,7 +29,7 @@ tags: [树, bfs]
 
 ### 方法一
 正常bfs，创建一个结构体，来记录level，然后bfs遍历过程中，把level对应的结果存下来，最后再整理输出，略微繁琐，因为要遍历两次。
-{% codeblock lang:cpp %}
+```cpp
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -86,11 +86,11 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 方法二
 第二个方法不像第一个方法，其实稍微多想一下会发现，其实可以通过每次**多处理几个元素来实现每次可以把一个Level给处理完**。做法就是，进入时，先**统计queue的长度**(显然在这种做法下，可以保证在queue中的都在同一个level)。然后每次就处理queue长度这么多个元素，然后就可以直接得出结果，而不需要向上面一样，先统计，再输出结果。
-{% codeblock lang:cpp %}
+```cpp
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -126,7 +126,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/binary-tree-level-order-traversal/

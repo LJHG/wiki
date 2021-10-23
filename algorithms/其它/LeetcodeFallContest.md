@@ -14,7 +14,7 @@ tags:
 然后换成两个map,不行。  
 然后心态崩了，不知道该怎么优化。   
 后来看了一下题解，怎么说呢，就是先对两个数组排序，然后一个正向遍历，一个反向遍历，这样两个数组都只走一遍就行了。（不得不说，看起来很简单，但是我真的没想到，也从来没有这么写过，真的学到了）。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int MOD = 1e9+7;
@@ -33,7 +33,7 @@ public:
         return ans%MOD;
     }
 };
-{% endcodeblock %}
+```
 
 ### 第三题  
 第三题我真的想了好久。最后大体思路对了，但还是差一点，可惜了。  
@@ -46,7 +46,7 @@ ryr(红黄红)是由ry或者ryr转移过来的(其实这个我写的时候并不
 同理ry是由ry或者r转移过来的(我当时就是没想到这一点，然后转而去直接计算ry，就是通过前缀和和后缀和来统计一个字符串前面的y数量和后部分的r数量，呃呃呃呃，复杂度直接就On²了，直接导致了超时)  
 
 贴一发raw代码，这个思路大概是对了，但是超时了。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int INF = 9999999;
@@ -96,10 +96,10 @@ public:
         
     }
 };
-{% endcodeblock %}
+```
 
 修改后的解法
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int INF = 9999999;
@@ -135,7 +135,7 @@ public:
         return ryr[len-1];
     }
 };
-{% endcodeblock %}
+```
 
 ### 总结
 这次止步于第三题，总结一下就是，dp开始变得生疏了，做完后感觉好像也没那么难想，以及，如果优化方向错了(第二题)，再怎么也无济于事。  

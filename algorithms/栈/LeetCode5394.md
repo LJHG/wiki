@@ -7,12 +7,12 @@ tags: [周赛186, 栈溢出, 数组越界]
 给你一个列表 nums ，里面每一个元素都是一个整数列表。请你依照下面各图的规则，按顺序返回 nums 中对角线上的整数。
 
 ### 示例： 
-{% codeblock %}
+```cpp
 输入：nums = [[1,2,3],[4,5,6],[7,8,9]]
 输出：[1,4,2,7,5,3,8,6,9]
 输入：nums = [[1,2,3],[4],[5,6,7],[8],[9,10,11]]
 输出：[1,4,2,5,3,8,6,9,7,10,11]
-{% endcodeblock %}
+```
 
 ### 解题思路:  
 思路就是正常遍历，然后把值加入到对应的对角线数组(vector)里面去  
@@ -20,7 +20,7 @@ tags: [周赛186, 栈溢出, 数组越界]
 先展示错误示范：  
 
 我这里ans开的二维数组，大小怎么改都改不好。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<int> findDiagonalOrder(vector<vector<int>>& nums) {
@@ -57,7 +57,7 @@ public:
         return ansV;
     }
 };
-{% endcodeblock %}
+```
 
 <br/>
 <br/>
@@ -66,7 +66,7 @@ public:
 既然直接开二维数组会爆，那就开vector数组吧  
 可以看到，我只是把ans给改成了vector数组，其它什么都没干，就过了，vector yyds。  
 其实这里的maxIndex都可以不要了，因为vector自带长度信息，懒得删了。
-{% codeblock lang:cpp %}
+```cpp
 const int maxN = 1e5 + 50;
 class Solution {
 public:
@@ -102,7 +102,7 @@ public:
         return ansV;
     }
 };
-{% endcodeblock %}
+```
 
 
 ### 题目链接：  

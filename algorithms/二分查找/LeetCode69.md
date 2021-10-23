@@ -10,7 +10,7 @@ tags: [二分, 牛顿迭代法]
 <!-- more -->
 
 ### 示例：   
-{% codeblock %}
+```cpp
 示例 1:
 输入: 4
 输出: 2
@@ -20,7 +20,7 @@ tags: [二分, 牛顿迭代法]
 输出: 2
 说明: 8 的平方根是 2.82842..., 
      由于返回类型是整数，小数部分将被舍去。
-{% endcodeblock %}
+```
 
 ### 解题思路:  
 正确方式：return sqrt(x) (雾)  
@@ -53,7 +53,7 @@ public:
 为此，先求初始化点(一个随便找的x)的切线方程，把与x轴的交点作为下一个x，然后一直迭代。  
 [具体去看LeetCode题解吧](https://leetcode-cn.com/problems/sqrtx/solution/x-de-ping-fang-gen-by-leetcode-solution/)
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int mySqrt(int x) {
@@ -73,7 +73,7 @@ public:
     }
 };
 
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/sqrtx/

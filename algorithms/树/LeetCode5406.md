@@ -9,11 +9,11 @@ tags: [树, dfs, 邻接表]
 ![](/images/min_time_collect_apple_1.png)
 <!-- more -->
 ### 示例：   
-{% codeblock %}
+```cpp
 输入：n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,true,false,true,true,false]
 输出：8 
 解释：上图展示了给定的树，其中红色节点表示有苹果。一个能收集到所有苹果的最优方案由绿色箭头表示。
-{% endcodeblock %}
+```
 
 ### 解题思路:  
 看见树我就会GG，果然，这次又栽了。最开始我写的DFS，极其复杂，简直就是在乱写，就懒得叙述了。 
@@ -23,7 +23,7 @@ tags: [树, dfs, 邻接表]
 另外，这道题需要把邻接矩阵（算是吧）转换成邻接表，不然会超时，当数据很大时，邻接表确实会快很多，不然每次都要对矩阵做遍历，很耗时。
 另外，在转邻接表时，我是当成有向图转的，因为反正都是不走回头路，而且输入时，每一个都是属于[上，下]的这种，我就直接做成了有向图。
 
-{% codeblock lang:cpp %}
+```cpp
 const int MAXN = 1e5+50;
 class Solution {
 public:
@@ -68,7 +68,7 @@ int totalAns;
         return totalAns*2;
     }
 };
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/minimum-time-to-collect-all-apples-in-a-tree/

@@ -35,7 +35,7 @@ MountainArray.length() - 会返回该数组的长度
 为了帮助大家更好地理解交互式问题，我们准备了一个样例 “答案”：https://leetcode-cn.com/playground/RKhe3ave，请注意这 不是一个正确答案。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 示例 1：
 
 输入：array = [1,2,3,4,5,3,1], target = 3
@@ -57,14 +57,14 @@ MountainArray.length() - 会返回该数组的长度
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/find-in-mountain-array
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
-{% endcodeblock %}
+```
 
 ### 解题思路:  
 这道题不能直接从头到尾遍历，因为题目说请求index的数据过多会报错，所以明显只能二分。  
 先通过二分找出山顶位置，然后在山顶位置前二分找出第一个答案，山顶位置后找出第二个答案就可以了。  
 注意山顶前的排序是从小到大，山顶后的排序是从大到小，两个的二分是反着来的。
 
-{% codeblock lang:cpp %}
+```cpp
 /**
  * // This is the MountainArray's API interface.
  * // You should not implement it, or speculate about its implementation
@@ -175,7 +175,7 @@ public:
     }
 };
 
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/find-in-mountain-array/

@@ -9,7 +9,7 @@ tags: [集合, set, map, 出度入度]
 题目数据保证线路图会形成一条不存在循环的线路，因此只会有一个旅行终点站。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 示例 1：
 输入：paths = [["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]]
 输出："Sao Paulo" 
@@ -36,7 +36,7 @@ paths[i].length == 2
 cityAi != cityBi
 所有字符串均由大小写英文字母和空格字符组成。
 
-{% endcodeblock %}
+```
 
 <!--more-->
 
@@ -44,7 +44,7 @@ cityAi != cityBi
 这道题看到的第一眼想到的是dfs，打这场周赛时，看到什么题都想dfs，后来都果不其然的超时了。  
 正确的解法是统计入度和出度，因为题目说了必定会有结果，所以可以知道，重点站的入度为1，出度为0，所以只需要统计所有的起点站，然后统计所有的城市，如果没有起点站的城市，就是终点站。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     string destCity(vector<vector<string>>& paths) {
@@ -66,10 +66,10 @@ public:
         return "";
     }
 };
-{% endcodeblock %}
+```
 
 ### PS:超时的dfs
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     string go(vector<vector<string>>& paths, string start)
@@ -123,7 +123,7 @@ public:
         return "nowhere";
     }
 };
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/destination-city/

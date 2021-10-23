@@ -7,7 +7,7 @@ tags: [前缀和, 哈希优化]
 给定一个整数数组 A，返回其中元素之和可被 K 整除的（连续、非空）子数组的数目。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例：
 输入：A = [4,5,0,-2,-3,1], K = 5
 输出：7
@@ -19,7 +19,7 @@ tags: [前缀和, 哈希优化]
 1 <= A.length <= 30000
 -10000 <= A[i] <= 10000
 2 <= K <= 10000
-{% endcodeblock %}
+```
 <!-- more -->
 
 
@@ -30,7 +30,7 @@ tags: [前缀和, 哈希优化]
 目标为： **(prefix[i]-prefix[j-1]) % k = 0** 
 稍微变化一下变为: **prefix[j-1] = prefix[i]-nk**  
 可以看到，这种变换不好，因为出现了n，所以不能直接定位到哈希表中的某一个数据，那就只有遍历了(那我还用哈希表干嘛) 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int subarraysDivByK(vector<int>& A, int K) {
@@ -54,7 +54,7 @@ public:
     }
 };
 
-{% endcodeblock %}
+```
 
 </br>
 
@@ -64,7 +64,7 @@ public:
 **prefix[i]%k = prefix[j-1]%k**  
 这个式子可以给我们一个思路，就是hashmap里面都存mod k 过后的结果。 
 同时要注意c++的mod可能会为一个负数，所以需要做一下处理，把  **curSum%k**  变为  **(curSum%k+k)%k**
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int subarraysDivByK(vector<int>& A, int K) {
@@ -82,7 +82,7 @@ public:
        return ans;
     }
 };
-{% endcodeblock %}
+```
 
 
 ## 题目链接：  

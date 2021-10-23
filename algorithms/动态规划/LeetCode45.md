@@ -9,7 +9,7 @@ tags: [dp, 动态规划, 贪心]
 你的目标是使用最少的跳跃次数到达数组的最后一个位置。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 输入: [2,3,1,1,4]
 输出: 2
 解释: 跳到最后一个位置的最小跳跃数是 2。
@@ -17,8 +17,7 @@ tags: [dp, 动态规划, 贪心]
 说明:
 
 假设你总是可以到达数组的最后一个位置。
-
-{% endcodeblock %}
+```
 
 ### 解题思路:  
 这道题给两个解题思路，一个是贪心，一个是dp。
@@ -29,7 +28,7 @@ tags: [dp, 动态规划, 贪心]
 贪心的策略是每次的选择要使得未来能够跳的最远，其实也很好理解，因为未来能够跳的最远，那么也可以跳的很近，也就是说，未来能够跳的最远的选择其实是包括了跳的近的选择的。证明差不多就是这个思路。  
 
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int jump(vector<int>& nums) {
@@ -59,7 +58,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 
 <br/>
@@ -68,7 +67,7 @@ public:
 dp的思路很简单，就是从后往前推，dp[i]表示从Index i 到最后的最小跳数。不过这道题直接这么搞会超时，所以加了一个same数组。same[i]表示Index为i位置往后包括自己跳到重点答案相同的个数，这样就没有必要为了相同的答案遍历很多次，但是有点难想到，因为最开始我并没有分析到超时是因为有很多相同的答案，还是看了评论区才知道的。  
 ps： memset不能用于赋值为1，所以这里用的循环赋值。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int jump(vector<int>& nums) {
@@ -102,7 +101,7 @@ public:
     }
 };
 
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/jump-game-ii/

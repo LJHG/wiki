@@ -13,7 +13,7 @@ candidates 中的数字可以无限制重复被选取。
 <!-- more -->
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例 1：
 输入：candidates = [2,3,6,7], target = 7,
 所求解集为：
@@ -30,7 +30,7 @@ candidates 中的数字可以无限制重复被选取。
   [2,3,3],
   [3,5]
 ]
-{% endcodeblock %}
+```
 
 ## 解题思路:  
 这道题的重点就是在于可重复吧，除了这个没什么好说的。  
@@ -39,7 +39,7 @@ candidates 中的数字可以无限制重复被选取。
 可以看到，我在可以选择该元素里面写了两个dfs(其实是加了一个),粗略一想，选择该元素时，可以去下一个节点，也可以不去嘛；不选择该元素时，直接去下一个节点。。。。没毛病。  
 确实没毛病，但是这样写就会有重复元素(这里不过多解释，稍微画一个图就很清楚了)。  
 没办法，只好加一个set去重，险过。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<vector<int>> ans;
@@ -86,11 +86,11 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 正确示范
 再转而一想(一看题解)，在一个节点不选该元素->去下一个节点；选择该元素->原地不动。不就行了么，而且还不会重复。瞬间感觉自己是个zz。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<vector<int>> ans;
@@ -127,7 +127,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/combination-sum/

@@ -9,10 +9,10 @@ tags: [单调栈, stack]
 
 ## 示例：
 ![](/images/leetcode84.png)
-{% codeblock %}
+```cpp
 输入: [2,1,5,6,2,3]
 输出: 10
-{% endcodeblock %}
+```
 <!-- more -->
 ## 解题思路:  
 最开始看到这道题以为是dp，然后写了半天递推公式发现是错的。  
@@ -20,7 +20,7 @@ tags: [单调栈, stack]
 
 ### 暴力
 暴力的思想很简单，就是对于每一个位置中心展开就行了，时间复杂度是O(n^2)，但是这道题过不了。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int largestRectangleArea(vector<int>& heights) {
@@ -55,7 +55,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 单调栈
 一如既往的，看到栈就头晕，不过这次还是把这道题搞出来了。  
@@ -67,7 +67,7 @@ public:
 2. 注意当栈顶元素和当前元素相等时做的处理，把栈顶pop并加入当前元素。  
 3. 在首尾加入height为0的元素，这样就不用做边界处理了，非常方便。  
 大致就写这么多，总结一下，当遇到这种需要左右边界来确定答案时，可以用到单调栈。(其实为什么会想到这种方法我也不是很清楚，虽然题做完了，方法理解了，但是对于为什么会选择这种方法本身，还是存在疑惑)
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int largestRectangleArea(vector<int>& heights) {
@@ -107,7 +107,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 还不懂还可以再去看看官方题解。

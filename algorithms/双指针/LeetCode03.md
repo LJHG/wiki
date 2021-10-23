@@ -7,7 +7,7 @@ tags: [滑动窗口, 双指针]
 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 示例 1:
     输入: "abcabcbb"
     输出: 3 
@@ -24,7 +24,7 @@ tags: [滑动窗口, 双指针]
     解释: 因为无重复字符的最长子串是 "wke"，所以其长度为 3。
          请注意，你的答案必须是 子串 的长度，"pwke" 是一个子序列，不是子串。
 
-{% endcodeblock %}
+```
 
 <!--more-->
 
@@ -35,7 +35,7 @@ tags: [滑动窗口, 双指针]
 暴力解法1是我最先想到的解法,方法是从头到尾进行一次遍历，对于每一个字符，往后查找直到有重复字符，使用的方法是用一个数组来记录（用map也行，这道题很多地方都可以用map，不过用数组比较方便，我就都是用的数组）。每次选择一个字符时，都要对数组进行初始化。  
 缺点就是每次初始化比较耗时，同时时间复杂度是O(n²)。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -63,13 +63,13 @@ public:
         return  ans;   
     }
 };
-{% endcodeblock %}
+```
 
 <br/>
 
 ### 暴力解法2
 暴力解法2是对长度进行遍历，相当于是给定一个固定长度的窗口，然后向后移动，不过虽然在改变数组时修改值是只改变了前后两个值，但是再查找是否有重复时还是采用的遍历，感觉比第一个解法还暴力，最后果不其然的超时了，这是虚假的滑动窗口。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -111,13 +111,13 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 <br/>
 
 ### 滑动窗口
 滑动窗口也可以叫双指针法，大体的思想是：如果当前子串没有重复，那么就把右指针往右移动一个单位；如果当前子串有重复，那么就把左指针往右移动一个单位。这里采用的方法是，每次移动左指针或者右指针后，都遍历判断一下当前是否有重复。实际上也是虚假的滑动窗口。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -156,14 +156,14 @@ public:
         return (right-left+1)>max?(right-left+1):max;
     }
 };
-{% endcodeblock %}
+```
 
 
 <br/>
 
 ### 滑动窗口的优化
 既然使用了滑动窗口，那么实际上每次的遍历找是否重复是没有必要的，因为如果有重复，那么必然来自于最近一次右边的移动，而且肯定只会重复一次。根据这一特性，可以把重复的字符给保存下来，如果左边往右移动时将这一个字符给去掉了，那么当前就又是一个无重复子串。  
-{% codeblock  lang:cpp %}
+```cpp
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -220,7 +220,7 @@ public:
         return (right-left+1)>max?(right-left+1):max;
     }
 };
-{% endcodeblock %}
+```
 
 
 ### 题目链接：  

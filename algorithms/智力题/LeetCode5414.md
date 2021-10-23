@@ -8,18 +8,18 @@ tags: []
 请找出不是其他任何人收藏的公司清单的子集的收藏清单，并返回该清单下标。下标需要按升序排列。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 输入：favoriteCompanies = [["leetcode","google","facebook"],["leetcode","amazon"],["facebook","google"]]
 输出：[0,1] 
 解释：favoriteCompanies[2]=["facebook","google"] 是 favoriteCompanies[0]=["leetcode","google","facebook"] 的子集，因此，答案为 [0,1] 。
-{% endcodeblock %}
+```
 <!-- more -->
 ### 解题思路:  
 本次周赛脑子短路+2，明明可以一次线性扫描就完事的，我偏要写成双重循环。这种blog写起来就很尴尬，不知道该加什么tag，但是不写又感觉不舒服。
 这道题我的大体思路是对的，就是先对于每一个vector集合排序，这样可以使得判断一个集合是否为另外一个集合的子集时更加容易，直接从左到右遍历就行了。我的问题就是出在从左到右遍历时，我居然对于从哪一个位置开始还写了一层循环(不知道自己在干嘛)，其实完全没必要的。  
 这次还踩了一个auto的坑，使用for(auto xxx:xxxx)时，是只读的。如果要对于xxx里的值进行改变(比如排序)，那么应该写为for(auto& xxx:xxxx)。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     
@@ -83,7 +83,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/

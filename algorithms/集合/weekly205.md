@@ -12,7 +12,7 @@ tags: [map,并查集,连通,图]
 第二题其实就是给你两个数组，然后让你看一看一个数组中的平方是不是等于另外一个数组中某两个数的乘积，如果是的话，就+1。  
 看起来很简单吧，直接写就是on3，超时妥妥的，不过我还是交了一发。  
 思考半天后，我想到了用map来进行优化，也就是我建了4个map，然后分别存自己的乘积，两数相乘，但是还是超时了，代码长这样。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int numTriplets(vector<int>& nums1, vector<int>& nums2) {
@@ -58,9 +58,9 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 随后我想到对序列进行排序可以少进行很多操作，然后**map是自排序的**，那早一点break不就能过了吗(不知道是不是侥幸，反正过了)。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int numTriplets(vector<int>& nums1, vector<int>& nums2) {
@@ -137,7 +137,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}  
+```
 
 最后，当我看到大佬的做法后，我震惊了，也就是说，其实根本没有必要创建四个map，使用两个map分别保存自己的平方就行了，然后在算两数乘积时，直接和存好的map直接比较不就行了吗？  
 嗯。。。是的，所以我这里犯了一个很经典的错误：**明明能够直接比，偏要存下来再来比**
@@ -153,7 +153,7 @@ ez
 先对全部公共边做判定，如果一条边对应的两个节点是连通的，那么就没必要加。  
 对公共边判定完后，再分别的 A 和 B自己来以类似方法判定。  
 代码如下(写得很垃圾，代码重复度高而且好像还很慢，不过过了)：
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int pre[100010];
@@ -247,7 +247,7 @@ public:
         return len-ans;
     }
 };
-{% endcodeblock %}  
+```
 
 ## 周赛链接
 https://leetcode-cn.com/contest/weekly-contest-205/

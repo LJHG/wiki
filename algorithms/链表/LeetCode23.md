@@ -7,7 +7,7 @@ tags: [链表, list]
 合并 k 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 输入:
 [
   1->4->5,
@@ -15,12 +15,12 @@ tags: [链表, list]
   2->6
 ]
 输出: 1->1->2->3->4->4->5->6
-{% endcodeblock %}
+```
 
 ### 解题思路:  
 贴一个最简单粗暴的方法，就是比然后插，主要记录一下链表操作方法，其实这一道题我感觉我像搞了两个头节点一样，有点奇怪，也没想好怎么优化
 
-{% codeblock lang:cpp %}
+```cpp
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -76,7 +76,7 @@ public:
         }
     }
 };
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/merge-k-sorted-lists/

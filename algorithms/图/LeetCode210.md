@@ -9,12 +9,12 @@ tags: [拓扑排序, 图]
 给定课程总量以及它们的先决条件，返回你为了学完所有课程所安排的学习顺序。
 可能会有多个正确的顺序，你只要返回一种就可以了。如果不可能完成所有课程，返回一个空数组。
 ### 示例：   
-{% codeblock %}
+```cpp
 输入: 4, [[1,0],[2,0],[3,1],[3,2]]
 输出: [0,1,2,3] or [0,2,1,3]
 解释: 总共有 4 门课程。要学习课程 3，你应该先完成课程 1 和课程 2。并且课程 1 和课程 2 都应该排在课程 0 之后。
      因此，一个正确的课程顺序是 [0,1,2,3] 。另一个正确的排序是 [0,2,1,3] 。
-{% endcodeblock %}
+```
 <!-- more -->
 ### 解题思路:  
 似曾相识的拓扑排序，感觉好像在算法课上讲过，这里也就当时温习(yuxi)一下了。  
@@ -25,7 +25,7 @@ dfs想起来要稍微麻烦一些，当处理一个节点时，先要将他标�
 2. 我的相邻节点在自己处理时发现了环
 这两种情况，直接return false, 当自己和相邻节点都处理过后，把自己标记为完成处理(1)。
 ps: 答案的记录是使用一个栈来记录的，最后再一个个弹出来就是正确答案了。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<int> edges[10000]; //记录i节点指向的边
@@ -94,12 +94,12 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### bfs
 bfs的解法就简单很多了，一句话，一直找入度为0的点就行了，当处理完一个点，更新相邻节点的入度。
 
-{% codeblock lang:cpp%}
+```cpp
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
@@ -162,7 +162,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/course-schedule-ii/

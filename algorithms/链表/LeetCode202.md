@@ -11,7 +11,7 @@ tags: [链表找环, 快慢指针]
 如果 n 是快乐数就返回 True ；不是，则返回 False 。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 输入：19
 输出：true
 解释：
@@ -19,14 +19,14 @@ tags: [链表找环, 快慢指针]
 8^2 + 2^2 = 68
 6^2 + 8^2 = 100
 1^2 + 0^2 + 0^2 = 1
-{% endcodeblock %}
+```
 
 ### 解题思路:  
 这里给两个解题思路，一个是暴力法，一个是快慢指针法
 
 ### 暴力法
 使用的方法就是用一个数组来存储已经走过的数据，如果再次访问，那么必定存在环。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int flag[1000];
@@ -54,7 +54,7 @@ public:
         return isHappyFunc(n);
     }
 };
-{% endcodeblock %}
+```
 
 <br/>
 <br/>
@@ -64,7 +64,7 @@ public:
 ![图示](/images/Floyed'sR&T.png)
 快指针每次移动两格，慢指针每次移动一格，如果存在环，即无线循环，那么快慢指针必定会相遇，return false, 否则快指针会先到达1，return true。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
 
@@ -94,7 +94,7 @@ public:
     }
 };
 
-{% endcodeblock %}
+```
 
 ### 题目链接：  
 https://leetcode-cn.com/problems/happy-number/

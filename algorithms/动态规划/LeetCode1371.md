@@ -7,7 +7,7 @@ tags: [状压, 前缀和]
 给你一个字符串 s ，请你返回满足以下条件的最长子字符串的长度：每个元音字母，即 'a'，'e'，'i'，'o'，'u' ，在子字符串中都恰好出现了偶数次。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例 1：
 输入：s = "eleetminicoworoep"
 输出：13
@@ -26,13 +26,13 @@ tags: [状压, 前缀和]
 提示：
 1 <= s.length <= 5 x 10^5
 s 只包含小写英文字母。
-{% endcodeblock %}
+```
 <!-- more -->
 ## 解题思路:  
 ### 状压dp
 这道题一看就是状态压缩，于是我首先就写了一发状压dp，但是因为s太长了，这里开的dp是二维的，最后就爆内存了。  
 其实这种状态压缩的写法并不好，写的时候就感觉很奇怪，之所以奇怪是因为这道题本质上是前缀和，可以用一维的来写，我偏偏写成了二维，最后写出来反正也爆内存了，不过至少这种方法是对的。
-{% codeblock lang:cpp %}
+```cpp
 const int MAXN= 10000;
 class Solution {
 public:
@@ -67,13 +67,13 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 </br>
 
 ### 前缀和
 发现这道题实际上是前缀和后，我立马写了一发前缀和，然后又超时了。
-{% codeblock lang:cpp %}
+```cpp
 const int MAXN= 500050;
 class Solution {
 public:
@@ -123,7 +123,7 @@ public:
        return ans;
     }
 };
-{% endcodeblock %}
+```
 </br>
 
 ### 前缀和+哈希优化
@@ -131,7 +131,7 @@ public:
 当前缀和加上哈希优化，最显著的变化就是不需要再开前缀和数组了，直接拿一个值一直累加(累亦或)下去就行了，以前还碰到一道[前缀和+哈希的题](https://www.assskiller.cn/2020/05/15/LeetCode560/)，可以看一下。  
 可以把式子稍微推一下，目标是找到prefrx[i] ^ prefix[j-1] = 0，变换一下可以变成prefix[i] = prefix[j-1]。这样一变就很明显了，把前缀和一直类推下去，然后把出现过的值的最小坐标记录一下，再次碰到时，将两个Index减一下就行了。  
 需要注意的是需要把records[0]设置为-1，同时还要标记当前的值是否出现过，那就只好把没出现过的值设置为-2了。(我感觉这种做法比较weird,但是至少是对的)。
-{% codeblock lang:cpp %}
+```cpp
 const int MAXN= 500050;
 class Solution {
 public:
@@ -164,7 +164,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/

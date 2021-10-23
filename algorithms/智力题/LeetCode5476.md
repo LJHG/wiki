@@ -12,11 +12,11 @@ tags: []
 
 
 ## 示例：   
-{% codeblock %}
+```cpp
 输入：arr = [2,1,3,5,4,6,7], k = 2
 输出：5
 因此将进行 4 回合比赛，其中 5 是赢家，因为它连胜 2 回合。
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
@@ -25,7 +25,7 @@ tags: []
 我看到这道题的第一眼，也想过一些其他的解法，比如从头到尾比一比可能就可以了之类的，但是也没想多，就否决了这些做法，然后搞了一个纯模拟。  
 而且因为要模拟，为了避免数组的移动，我理所应当地使用了链表，真的麻烦。  
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     struct node{
@@ -80,13 +80,13 @@ public:
         return 0;
     }
 };
-{% endcodeblock %}
+```
 
 ### 稍微想一想的做法
 其实这道题稍微想一想就会发现，真的很简单。  
 因为每次比赛都会把大的数作为擂主，所以当前的擂主就是当前最大的数，然后我从头到尾遍历一遍不就完了吗？  
 所以一个数要么被一个更大的数替代，要么就连续赢了K次，可能你会说啊不是还没比到K次就结束了的情况吗？(OS)，你想一想，如果还没比到K次就结束了，那么当前的擂主一定是这整个数组中最大的数，那么他一定就是winner啊。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int getWinner(vector<int>& arr, int k) {
@@ -105,7 +105,7 @@ public:
         return winner;
     }
 };
-{% endcodeblock %}
+```
 
 
 

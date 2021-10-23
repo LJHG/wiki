@@ -7,7 +7,7 @@ tags: [组合,排列,回溯,dfs]
 给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例:
 输入: n = 4, k = 2
 输出:
@@ -19,7 +19,7 @@ tags: [组合,排列,回溯,dfs]
   [1,3],
   [1,4],
 ]
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
@@ -29,7 +29,7 @@ tags: [组合,排列,回溯,dfs]
 排列做法和全排列的那道题一样，都是记录了一个vis数组，来看是否已经访问过。  
 至于排列为什么需要一个vis数组呢，是因为排列后面的元素的后面是可以去访问前面的元素的，例如213这种，所以需要一个vis数组来进行记录。但是对于组合来说，123,213,321都是一样的，所以在做组合问题时用排列完全是大材小用了。  
 在使用排列解决组合时，为了通过，我还使得往后添加的元素不得大于前面的元素，那排列这种方法就更显得可笑了。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<vector<int>> ans;
@@ -66,12 +66,12 @@ public:
         
     }
 };
-{% endcodeblock %}
+```
 
 ### 组合做法
 组合的做法就很简单了，对于每一种位置，可以选择选或者不选，完了。  
 可以稍微剪一下枝，更快。(不剪都比排列快)  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<int> record;
@@ -99,6 +99,6 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 ## 题目链接：  
 https://leetcode-cn.com/problems/combinations/

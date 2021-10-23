@@ -9,7 +9,7 @@ tags: [递归, 树]
 你可以假设树中没有重复的元素。
 
 ### 示例：   
-{% codeblock %}
+```cpp
 例如，给出
 前序遍历 preorder = [3,9,20,15,7]
 中序遍历 inorder = [9,3,15,20,7]
@@ -21,7 +21,7 @@ tags: [递归, 树]
     /  \
    15   7
 
-{% endcodeblock %}
+```
 <!-- more -->
 
 
@@ -31,7 +31,7 @@ tags: [递归, 树]
 
 ### 优化前的递归
 优化前我是在每次递归时都去构建了新的vector来作为参数传下去，所以有点慢。
-{% codeblock lang:cpp %}
+```cpp
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -143,13 +143,13 @@ public:
         return root;
     }
 };
-{% endcodeblock %}
+```
 
 </br>
 
 ### 优化后的递归
 但是其实不用每次都去构建vector，只需要把对应的左边和右边的index记录一下就可以了。
-{% codeblock lang:cpp %}
+```cpp
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -207,7 +207,7 @@ public:
         return root;
     }
 };
-{% endcodeblock %} 
+```
 
 
 ### 题目链接：  

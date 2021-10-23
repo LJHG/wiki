@@ -14,7 +14,7 @@ candidates 中的每个数字在每个组合中只能使用一次。
 <!-- more -->
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例 1:
 输入: candidates = [10,1,2,7,6,1,5], target = 8,
 所求解集为:
@@ -32,13 +32,13 @@ candidates 中的每个数字在每个组合中只能使用一次。
   [1,2,2],
   [5]
 ]
-{% endcodeblock %}
+```
 
 ## 解题思路:  
 这道题大体和其他几道组合差不多，重点就是答案如何去重 比如 1 1 2 和 1 2 1，这种就是重复的。  
 去重的方法很简单，如果前面选了1，后面才能选，如果没有选，那么后面就都不要选。  
 感觉没啥毛病，但运行得有点慢。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<vector<int>> ans;
@@ -85,7 +85,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/combination-sum-ii/

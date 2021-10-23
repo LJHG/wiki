@@ -7,7 +7,7 @@ tags: [dfs,递归,栈,stack]
 给一个二叉树，返回中序遍历。  
 
 ## 示例：   
-{% codeblock %}
+```cpp
 输入: [1,null,2,3]
    1
     \
@@ -15,14 +15,14 @@ tags: [dfs,递归,栈,stack]
     /
    3
 输出: [1,3,2]
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
 分两种方法解，一个是递归，一个是用栈。  
 ### 递归
 没什么好说的  
-{% codeblock lang:cpp %}
+```cpp
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -46,11 +46,11 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 ### 栈
 栈这个方法还是要稍微注意一下，思路就是先一路一直压左边压到不能压，然后弹出一个后push进入答案，然后尝试对右子树疯狂压左边(同上)。  
 通俗易懂代码：
-{% codeblock lang:cpp %}
+```cpp
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -84,7 +84,7 @@ public:
         
     }
 };
-{% endcodeblock %}
+```
 其实两个循环是可以合并为一个的，是简洁版代码，不过没这个好懂，懒得贴了，要看自己去Leetcode题解看。  
 
 ## 题目链接：  

@@ -11,11 +11,11 @@ tags: [图]
 <!-- more -->
 
 ## 示例：   
-{% codeblock %}
+```cpp
 输入：n = 6, edges = [[0,1],[0,2],[2,5],[3,4],[4,2]]
 输出：[0,3]
 解释：从单个节点出发无法到达所有节点。从 0 出发我们可以到达 [0,1,2,5] 。从 3 出发我们可以到达 [3,4,2,5] 。所以我们输出 [0,3] 。
-{% endcodeblock %}
+```
 
 ## 解题思路:
 这次的双周赛和周赛，其他的题稍微整一整还是能整出来，这道题是真的掉坑里面去了，记录一下。  
@@ -24,7 +24,7 @@ tags: [图]
 总而言之，就是对于每一个点找到它的源头，复杂度尤其之高，加入一个记录数组后会好很多，但还是一个非常非常低效的方法。  
 具体的实现就是对于一个节点，在edges里找到一个节点指向它，然后把起点作为新的节点来再找.....
 无脑暴力不可取，这道题想到这种方法还是走远了。  
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<int> findSmallestSetOfVertices(int n, vector<vector<int>>& edges) {
@@ -74,12 +74,12 @@ public:
 
     }
 };
-{% endcodeblock %}
+```
 
 ### 方法2---统计入度为0的点
 还是比较容易想到的(我没想到),一想到这个，一枪秒了，有什么好说的。  
 然后一不小心又掉坑里了
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<int> findSmallestSetOfVertices(int n, vector<vector<int>>& edges) {
@@ -102,10 +102,10 @@ public:
     
 };
 
-{% endcodeblock %}
+```
 
 可以见到，上面的做法我是对于每一个节点做外层循环，然后去统计每一个点的入度，还是太慢了，其实对edges数组扫一遍就完事了。
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     vector<int> findSmallestSetOfVertices(int n, vector<vector<int>>& edges) {
@@ -124,7 +124,7 @@ public:
     }
     
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/minimum-number-of-vertices-to-reach-all-nodes/

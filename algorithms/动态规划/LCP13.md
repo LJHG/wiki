@@ -11,12 +11,12 @@ tags: [dp,动态规划,bfs,状态压缩]
 我们每步可以选择向上/向下/向左/向右移动一格，并且不能移出迷宫。搬起石头和放下石头不算步数。那么，从起点开始，我们最少需要多少步才能最后拿到宝藏呢？如果无法拿到宝藏，返回 -1 。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 输入： ["S#O", "M..", "M.T"]
 输出：16
 
 解释：最优路线为： S->O, cost = 4, 去搬石头 O->第二行的M, cost = 3, M机关触发 第二行的M->O, cost = 3, 我们需要继续回去 O 搬石头。 O->第三行的M, cost = 4, 此时所有机关均触发 第三行的M->T, cost = 2，去T点拿宝藏。 总步数为16。 
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
@@ -30,7 +30,7 @@ tags: [dp,动态规划,bfs,状态压缩]
 然后可以列出状态转移方程 **dp[i][state] = min(dp[j][state-(1<<i)+dis[i][j]])** 
 然后还有一个要注意的点就是dp的循环该怎么写，最开始我一直没想到dp最外层的循环该怎么写，后来看了一下别人的代码，最外层的循环是state,而且就是从小到大遍历的，想了一下还是有道理。  
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution{
 public:
     int INF = 999999;
@@ -200,7 +200,6 @@ public:
         return ans;  
     }
 };
-{% endcodeblock %}
-
+```
 ## 题目链接：  
 https://leetcode-cn.com/problems/xun-bao/

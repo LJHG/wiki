@@ -7,7 +7,7 @@ tags: [快慢指针法]
 给定一个包含 n + 1 个整数的数组 nums，其数字都在 1 到 n 之间（包括 1 和 n），可知至少存在一个重复的整数。假设只有一个重复的整数，找出这个重复的数。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例 1:
 输入: [1,3,4,2,2]
 输出: 2
@@ -20,7 +20,7 @@ tags: [快慢指针法]
 只能使用额外的 O(1) 的空间。
 时间复杂度小于 O(n2) 。
 数组中只有一个重复的数字，但它可能不止重复出现一次。
-{% endcodeblock %}
+```
 <!-- more -->
 
 
@@ -31,7 +31,7 @@ tags: [快慢指针法]
 同时要注意快慢指针的模板写法，最开始是把**快指针和慢指针初始化为0**，然后**使用一个do while循环来找相遇点**。  
 以及要记住快慢指针的前提是**链表**，所以如果要把数组转换为一个链表，使用 **slow = nums[slow]** 这种方式就可以了。
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
@@ -55,7 +55,7 @@ public:
        }
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/find-the-duplicate-number/

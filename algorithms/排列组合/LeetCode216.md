@@ -10,7 +10,7 @@ tags: [排列组合,回溯,dfs]
 解集不能包含重复的组合。 
 <!-- more -->
 ## 示例：   
-{% codeblock %}
+```cpp
 示例 1:
 输入: k = 3, n = 7
 输出: [[1,2,4]]
@@ -18,13 +18,13 @@ tags: [排列组合,回溯,dfs]
 示例 2:
 输入: k = 3, n = 9
 输出: [[1,2,6], [1,3,5], [2,3,4]]
-{% endcodeblock %}
+```
 
 ## 解题思路:  
 这道题真的，在经过这一周排列组合的轰炸下，太简单了。  
 没什么好说的，只是记录一下，凑个全家福。  
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public: 
     vector<vector<int>> ans;
@@ -55,7 +55,7 @@ public:
         return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/combination-sum-iii/

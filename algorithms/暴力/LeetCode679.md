@@ -7,7 +7,7 @@ tags: [暴力]
 你有 4 张写有 1 到 9 数字的牌。你需要判断是否能通过 *，/，+，-，(，) 的运算得到 24。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 示例 1:
 输入: [4, 1, 8, 7]
 输出: True
@@ -21,7 +21,7 @@ tags: [暴力]
 除法运算符 / 表示实数除法，而不是整数除法。例如 4 / (1 - 2/3) = 12 。
 每个运算符对两个数进行运算。特别是我们不能用 - 作为一元运算符。例如，[1, 1, 1, 1] 作为输入时，表达式 -1 - 1 - 1 - 1 是不允许的。
 你不能将数字连接在一起。例如，输入为 [1, 2, 1, 2] 时，不能写成 12 + 12 。
-{% endcodeblock %}
+```
 <!-- more -->
 
 ## 解题思路:  
@@ -30,7 +30,7 @@ tags: [暴力]
 需要注意的点是选出两个数做完运算的结果应该和剩下没有做运算的数字一起加入到新的数组中，然后套娃，这样一想其实是可以dfs的，但是我用的暴力，都差不多吧，就懒得写了。  
 代码如下:
 
-{% codeblock lang:cpp %}
+```cpp
 class Solution {
 public:
     bool judgePoint24(vector<int>& nums) {
@@ -101,20 +101,20 @@ public:
         return false;
     }
 };
-{% endcodeblock %}
+```
 
 要注意一下浮点数绝对值是fabs
 
 这里要列一个我傻逼的地方，可能是写High了，在写循环时，我写成了
-{% codeblock lang:cpp%}
+```cpp
 for(int m=0;m<4&&m!=i&&m!=j;m++)
-{% endcodeblock %}
+```
 其实我想表达的意思是
-{% codeblock lang:cpp%}
+```cpp
  for(int m=0;m<4;m++){
     if(m==i || m==j) continue;
  }
-{% endcodeblock %}
+```
 草，太搞笑了
 
 ## 题目链接：  

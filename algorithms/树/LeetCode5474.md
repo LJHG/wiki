@@ -9,11 +9,11 @@ tags: [记录路径]
 返回树中 好叶子节点对的数量 。
 
 ## 示例：   
-{% codeblock %}
+```cpp
 输入：root = [1,2,3,null,4], distance = 3
 输出：1
 解释：树的叶节点是 3 和 4 ，它们之间的最短路径的长度是 3 。这是唯一的好叶子节点对。
-{% endcodeblock %}
+```
 
 <!-- more -->
 
@@ -22,7 +22,7 @@ tags: [记录路径]
 我也不知道怎么给这个方法命名，不妨就叫记录路径法吧。  
 大体思路是这样的：从根往叶子节点走，走左子树记录为0，走右子树记录为1，那么走到叶子节点后，每个节点都会对应有一个序列。比如上面那个例子，3号节点的序列就是1，4号节点的序列就是01，根据这个序列，就可以计算两个叶子之间的距离了。具体怎么计算的，看代码吧，反正就是左对齐然后一顿整。
 
-{% codeblock lang:cpp %}
+```cpp
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -83,7 +83,7 @@ public:
       return ans;
     }
 };
-{% endcodeblock %}
+```
 
 ## 题目链接：  
 https://leetcode-cn.com/problems/number-of-good-leaf-nodes-pairs/

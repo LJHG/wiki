@@ -1,5 +1,4 @@
 # Introduction
 
-从hexo迁移到gitbook
+我的知识整理站点，尽可能把所有的东西都记录到里面。
 
-gitbook居然要全部在summary里面检索一遍，工作量巨大，迁移可能需要一段时间

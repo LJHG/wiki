@@ -9,15 +9,19 @@
         "livereload",
         "github",
         "expandable-chapters-small",
-        "katex"
+        "katex",
+        "page-toc"
     ],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/LJHG"
         },
-        "pluginsConfig": {
-            "expandable-chapters-small":{}
-        }
+        "expandable-chapters-small":{},
+        "page-toc": {
+            "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
+            "position": "before-first",
+            "showByDefault": true
+        }        
     },
     "styles": {
         "website": "styles/website.css",

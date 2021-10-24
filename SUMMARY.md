@@ -8,6 +8,7 @@
   * [我的本科毕设-二值神经网络](DL/bnndemo.md)
 * [计算机图形学](CG/README.md)
   * [GAMES101](CG/GAMES101/README.md)
+    * [Assignment1](CG/GAMES101/assignment1.md)
 * [后端开发](backend/README.md)
 * [算法](./algorithms/README.md)
   * [动态规划](algorithms/动态规划/README.md)

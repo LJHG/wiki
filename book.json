@@ -10,18 +10,13 @@
         "github",
         "expandable-chapters-small",
         "katex",
-        "page-toc"
+        "intopic-toc"
     ],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/LJHG"
         },
-        "expandable-chapters-small":{},
-        "page-toc": {
-            "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4",
-            "position": "before-first",
-            "showByDefault": true
-        }        
+        "expandable-chapters-small":{}
     },
     "styles": {
         "website": "styles/website.css",

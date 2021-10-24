@@ -1,13 +1,15 @@
 {
     "links" : {
         "sidebar" : {
-            "LJHG's Book" : "http://www.ljhblog.top"
+            "主页" : "http://www.ljhblog.top",
+            "GitHub": "https://github.com/LJHG"
         }
     },
     "plugins": [
         "livereload",
         "github",
-        "expandable-chapters-small"
+        "expandable-chapters-small",
+        "katex"
     ],
     "pluginsConfig": {
         "github": {
@@ -16,5 +18,13 @@
         "pluginsConfig": {
             "expandable-chapters-small":{}
         }
+    },
+    "styles": {
+        "website": "styles/website.css",
+        "ebook": "styles/ebook.css",
+        "pdf": "styles/pdf.css",
+        "mobi": "styles/mobi.css",
+        "epub": "styles/epub.css"
     }
+    
 }

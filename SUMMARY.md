@@ -6,6 +6,8 @@
 * [深度学习](DL/README.md)
   * [batch与并行计算速度的讨论](DL/batch-and-speed.md)
   * [我的本科毕设-二值神经网络](DL/bnndemo.md)
+* [强化学习](RL/README.md)
+  * [value&policy iteration](RL/value&policy_iteration.md)
 * [计算机图形学](CG/README.md)
   * [GAMES101](CG/GAMES101/README.md)
     * [Assignment1](CG/GAMES101/assignment1.md)

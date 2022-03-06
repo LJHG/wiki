@@ -14,6 +14,7 @@
     * [Assignment2](CG/GAMES101/assignment2.md)
     * [Assignment3](CG/GAMES101/assignment3.md)
     * [Assignment4](CG/GAMES101/assignment4.md)
+    * [Assignment5](CG/GAMES101/assignment5.md)
 * [后端开发](backend/README.md)
 * [算法](./algorithms/README.md)
   * [动态规划](algorithms/动态规划/README.md)

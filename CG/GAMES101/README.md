@@ -7,3 +7,5 @@
 * [Assignment5](assignment5.md)
 * [Assignment6](assignment6.md)
 * [Assignment7](assignment7.md)
+
+games101的assignment更新到此为止，assignment8是物理模拟相关的，暂时先不更了～

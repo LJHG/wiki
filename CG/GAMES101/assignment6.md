@@ -6,7 +6,7 @@
 
 运行结果：
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220306213926220.png" alt="image-20220306213926220" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220306213926220.png" alt="image-20220306213926220" style="zoom:33%;" />
 
 ## 2. 实现细节
 
@@ -25,17 +25,17 @@
 
 使用六个平面来定义出一个box：
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220307092826919.png" alt="image-20220307092826919" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220307092826919.png" alt="image-20220307092826919" style="zoom:33%;" />
 
 然后计算光线与这六个平面相交的时间，因为是axis-aligned的，所以可以采用正视图/侧视图/俯视图的方式来简易计算求交的时间。
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220307092721269.png" alt="image-20220307092721269" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220307092721269.png" alt="image-20220307092721269" style="zoom:33%;" />
 
 对于每一个axis，可以计算出两个平面的求交时间分别为t_min和t_max，于是最后我们可以得到三组t_min, t_max。
 
 最后取一个交集，就能够计算出光线进入这个box的t_min, t_max：
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220307093155285.png" alt="image-20220307093155285" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220307093155285.png" alt="image-20220307093155285" style="zoom: 33%;" />
 
 具体的代码如下所示：
 

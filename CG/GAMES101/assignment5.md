@@ -6,7 +6,7 @@
 
 运行结果：
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/QS9W~L7IX%5DKTU0JVQ6L0LTA.png" alt="img" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/QS9W~L7IX%5DKTU0JVQ6L0LTA.png" alt="img" style="zoom:33%;" />
 
 ## 2. 实现细节
 
@@ -113,7 +113,7 @@ float y = (1 - ((j + 0.5)/scene.height)*2) *  scale;
 
 这一块的话直接套Möller-Trumbore算法的公式即可：
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220306133045747.png" alt="image-20220306133045747" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220306133045747.png" alt="image-20220306133045747" style="zoom: 33%;" />
 
 ```cpp
 bool rayTriangleIntersect(const Vector3f& v0, const Vector3f& v1, const Vector3f& v2, const Vector3f& orig, const Vector3f& dir, float& tnear, float& u, float& v)

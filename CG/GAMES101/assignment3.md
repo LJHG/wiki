@@ -6,7 +6,7 @@
 
 这里就贴一个texture shader运行的结果：
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220101165837476.png" alt="image-20220101165837476" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220101165837476.png" alt="image-20220101165837476" style="zoom: 33%;" />
 
 ## 2. 实现细节
 
@@ -123,23 +123,23 @@ depth_buf[index] = z_interpolated;
 
 * normal
 
-  <img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220101174322948.png" alt="image-20220101174322948" style="zoom:33%;" />
+  <img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220101174322948.png" alt="image-20220101174322948" style="zoom:33%;" />
 
 * Blinn-Phong
 
-  <img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220101174038116.png" alt="image-20220101174038116" style="zoom:33%;" />
+  <img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220101174038116.png" alt="image-20220101174038116" style="zoom:33%;" />
 
 * texture
 
-  <img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220101174123089.png" alt="image-20220101174123089" style="zoom:33%;" />
+  <img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220101174123089.png" alt="image-20220101174123089" style="zoom:33%;" />
 
 * bump
 
-  <img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220101174204254.png" alt="image-20220101174204254" style="zoom:33%;" />
+  <img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220101174204254.png" alt="image-20220101174204254" style="zoom:33%;" />
 
 * displacement
 
-  <img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220101174246060.png" alt="image-20220101174246060" style="zoom:33%;" />
+  <img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220101174246060.png" alt="image-20220101174246060" style="zoom:33%;" />
 
 
 

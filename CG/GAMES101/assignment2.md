@@ -2,7 +2,7 @@
 
 ## 运行结果
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220101175340666.png" alt="image-20220101175340666" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220101175340666.png" alt="image-20220101175340666" style="zoom:50%;" />
 
 
 
@@ -50,7 +50,7 @@ static bool insideTriangle(int x, int y, const Vector3f* _v)
 
 ### 2. 三角形边界的确定
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master//static/image-20211025231838941.png" alt="image-20211025231838941" style="zoom: 67%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20211025231838941.png" alt="image-20211025231838941" style="zoom: 67%;" />
 
 通过对三角形的边界进行确认，可以加速光栅化的过程，具体代码如下：
 

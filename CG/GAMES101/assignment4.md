@@ -4,7 +4,7 @@
 
 运行结果：
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220228220709563.png" alt="image-20220228220709563" style="zoom: 33%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220228220709563.png" alt="image-20220228220709563" style="zoom: 33%;" />
 
 ## 2. 实现细节
 

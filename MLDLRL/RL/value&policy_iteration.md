@@ -7,11 +7,11 @@
 
 比如：
 
-![image-20211227183556201](https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20211227183556201.png)
+![image-20211227183556201](https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20211227183556201.png)
 
 $$V^{\pi}$$ 是 从某一个位置开始(当作初始位置) 所获得的一个 reward
 
-![image-20211227183739382](https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20211227183739382.png)
+![image-20211227183739382](https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20211227183739382.png)
 
 
 
@@ -19,7 +19,7 @@ $$V^{\pi}$$ 是 从某一个位置开始(当作初始位置) 所获得的一个 
 
 #### bellman equation
 
-![image-20211227184936151](https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20211227184936151.png)
+![image-20211227184936151](https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20211227184936151.png)
 
 
 
@@ -27,11 +27,11 @@ $$V^{\pi}$$ 是 从某一个位置开始(当作初始位置) 所获得的一个 
 
 比如说要求 (3,1) 这个位置的 $$V^{\pi}$$
 
-![image-20211227185217516](https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20211227185217516.png)
+![image-20211227185217516](https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20211227185217516.png)
 
 那么求法就是：
 
-![image-20211227185300830](https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20211227185300830.png)
+![image-20211227185300830](https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20211227185300830.png)
 
 如果把每一个状态对应的$$V^{\pi}$$当作是一个未知数，由于已经给出了确定的policy $$\pi$$ (也就是说action是确定的)，那么根据bellman equation，每一个$$V^{\pi}$$都可以写出一个方程。所以可以用一个linear solver来构建方程并且求解。
 
@@ -45,11 +45,11 @@ $$\pi^*$$ 是 optimal policy
 
 $$ V^* $$是 optimal policy 对应的value function，公式如下：
 
-![image-20211227191645200](https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20211227191645200.png)
+![image-20211227191645200](https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20211227191645200.png)
 
 #### 对应的bellman equation
 
-![image-20211227192056237](https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20211227192056237.png)
+![image-20211227192056237](https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20211227192056237.png)
 
 
 
@@ -57,7 +57,7 @@ $$ V^* $$是 optimal policy 对应的value function，公式如下：
 
 由于V(s)直接存在相互依赖关系，value iteration有两种，一种是 synchrounous，就是每一个V(s)同步更新，另一种就是asynchrounous，就是V(s)的更新不同步。不过都差不多。
 
-![image-20211227193331244](https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20211227193331244.png)
+![image-20211227193331244](https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20211227193331244.png)
 
 经过多次迭代，V就会很快收敛到V*。最后收敛完毕后，再去计算对应的 π(s) 。
 
@@ -71,7 +71,7 @@ policy iteration的重点在于π，在循环中。
 
 第二步：假设V是optimal value function，即V*，然后更新 π(s)。
 
-![image-20211227195556271](https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20211227195556271.png)
+![image-20211227195556271](https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20211227195556271.png)
 
 
 

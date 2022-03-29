@@ -6,7 +6,7 @@
 
 当把spp设置为32时，结果如图所示：
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220313154640560.png" alt="image-20220313154640560" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220313154640560.png" alt="image-20220313154640560" style="zoom:33%;" />
 
 
 
@@ -131,15 +131,15 @@ if(t_enter <= t_exit && t_exit >= 0){
 
 * spp = 1
 
-  <img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220313154827341.png" alt="image-20220313154827341" style="zoom:33%;" />
+  <img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220313154827341.png" alt="image-20220313154827341" style="zoom:33%;" />
 
 * spp = 16
 
-  <img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220313155000558.png" alt="image-20220313155000558" style="zoom:33%;" />
+  <img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220313155000558.png" alt="image-20220313155000558" style="zoom:33%;" />
 
 * spp = 32
 
-  <img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/image-20220313155028295.png" alt="image-20220313155028295" style="zoom:33%;" />
+  <img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/image-20220313155028295.png" alt="image-20220313155028295" style="zoom:33%;" />
 
 
 

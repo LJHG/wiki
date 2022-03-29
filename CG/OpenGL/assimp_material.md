@@ -10,17 +10,17 @@
 
 比如这是官方给的示例的文件，其中包含了很多的材质贴图：
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/202203251505999.png" alt="image-20220325135545963" style="zoom:33%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/202203251505999.png" alt="image-20220325135545963" style="zoom:33%;" />
 
 在相关的mtl文件里也链接到了具体的贴图文件：
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/202203251505227.png" alt="image-20220325135723346" style="zoom: 50%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/202203251505227.png" alt="image-20220325135723346" style="zoom: 50%;" />
 
 但是我们在使用blender等很多软件建模时是没有材质贴图的，一般来说只有一个obj文件和一个mtl文件：
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/202203251506574.png" alt="image-20220325135810722" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/202203251506574.png" alt="image-20220325135810722" style="zoom:50%;" />
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/202203251506857.png" alt="image-20220325135828015" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/202203251506857.png" alt="image-20220325135828015" style="zoom:50%;" />
 
 所以只要想办法获取到mtl文件里的Ka, Kd, Ks这几项，然后想办法把它传进shader渲染就行了。
 
@@ -106,4 +106,4 @@ vec3 ambient;
 
 最后就可以直接对没有贴图的obj来进行渲染了～
 
-<img src="https://gitee.com/ljh112233/whatisthis/raw/master/static/202203251517345.png" alt="image-20220325151732301" style="zoom:50%;" />
+<img src="https://raw.githubusercontent.com/ljhgpp/whatisthis/main/static/202203251517345.png" alt="image-20220325151732301" style="zoom:50%;" />

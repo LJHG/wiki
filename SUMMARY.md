@@ -22,7 +22,7 @@
     * [value&policy iteration](MLDLRL/RL/value&policy_iteration.md)
 * [后端开发](backend/README.md)
 * [Debug日常](Debug/readme.md)
-  * [pybing内存泄漏](Debug/pybind内存泄漏.md)
+  * [pybind内存泄漏](Debug/pybind内存泄漏.md)
 * [算法](./algorithms/README.md)
   * [动态规划](algorithms/动态规划/README.md)
     * [LCP13](algorithms/动态规划/LCP13.md)

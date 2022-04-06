@@ -15,6 +15,7 @@
 * [ML/DL/RL](MLDLRL/README.md)
   * [机器学习](MLDLRL/ML/README.md)
     * [KNN计算的三种姿势](MLDLRL/ML/knn-distance-computing.md)
+    * [用scatter函数计算onehot](MLDLRL/ML/scatter_onehot.md)
   * [深度学习](MLDLRL/DL/README.md)
     * [batch与并行计算速度的讨论](MLDLRL/DL/batch-and-speed.md)
     * [BNN](MLDLRL/DL/bnndemo.md)

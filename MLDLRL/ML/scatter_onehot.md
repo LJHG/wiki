@@ -65,3 +65,4 @@ ans[ans == 0] = 1
 ans = -torch.log2(ans).sum()
 ```
 
+最后测试得到，原本要3s的运算只需要0.1s了～

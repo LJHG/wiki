@@ -89,6 +89,7 @@
     * [LeetCode 5413](algorithms/智力题/LeetCode5413.md)
     * [LeetCode 5414](algorithms/智力题/LeetCode5414.md)
     * [LeetCode 5476](algorithms/智力题/LeetCode5476.md)
+    * [LeetCode 780](algorithms/智力题/LeetCode780.md)
   * [快速幂](algorithms/快速幂/README.md)
     * [LeetCode 50](algorithms/快速幂/LeetCode50.md)
   * [集合](algorithms/集合/README.md)

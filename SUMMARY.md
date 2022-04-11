@@ -10,6 +10,8 @@
     * [Assignment5](CG/GAMES101/assignment5.md)
     * [Assignment6](CG/GAMES101/assignment6.md)
     * [Assignment7](CG/GAMES101/assignment7.md)
+  * [GAMES202](CG/GAMES202/README.md)
+    * [Assignment1](CG/GAMES202/assignment1.md)
   * [OpenGL](CG/OpenGL/README.md)
     * [使用assimp读取没有贴图的模型](CG/OpenGL/assimp_material.md)
 * [ML/DL/RL](MLDLRL/README.md)

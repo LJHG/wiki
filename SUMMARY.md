@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+
 * [计算机图形学](CG/README.md)
   * [GAMES101](CG/GAMES101/README.md)
     * [Assignment1](CG/GAMES101/assignment1.md)
@@ -14,6 +15,7 @@
     * [Assignment1](CG/GAMES202/assignment1.md)
   * [OpenGL](CG/OpenGL/README.md)
     * [使用assimp读取没有贴图的模型](CG/OpenGL/assimp_material.md)
+  
 * [ML/DL/RL](MLDLRL/README.md)
   * [机器学习](MLDLRL/ML/README.md)
     * [KNN计算的三种姿势](MLDLRL/ML/knn-distance-computing.md)
@@ -23,9 +25,14 @@
     * [BNN](MLDLRL/DL/bnndemo.md)
   * [强化学习](MLDLRL/RL/README.md)
     * [value&policy iteration](MLDLRL/RL/value&policy_iteration.md)
-* [后端开发](backend/README.md)
+  
+* [分布式系统](DistributedSys/README.md)
+  * [MIT6.824](DistributedSys/mit6.824/readme.md)
+    * [lab1-mapreduce](DistributedSys/mit6.824/lab1.md)
+
 * [Debug日常](Debug/readme.md)
   * [pybind内存泄漏](Debug/pybind内存泄漏.md)
+
 * [算法](./algorithms/README.md)
   * [tag汇总](./algorithms/tag_table.md)
   * [动态规划](algorithms/动态规划/README.md)
@@ -119,7 +126,7 @@
     * [LeetCode 679](algorithms/暴力/LeetCode679.md)
   * [其它](algorithms/其它/README.md)
     * [LeetCode 秋季编程大赛2020](algorithms/其它/LeetcodeFallContest.md)
-  
+
   
 
   

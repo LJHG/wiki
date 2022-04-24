@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-
+* [归档](archive.md)
 * [计算机图形学](CG/README.md)
   * [GAMES101](CG/GAMES101/README.md)
     * [Assignment1](CG/GAMES101/assignment1.md)

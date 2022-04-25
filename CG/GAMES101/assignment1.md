@@ -1,4 +1,8 @@
-<!-- toc -->
+---
+title: GAMES101-assignment1-画三角形
+date: 2021-10-24
+tags: [GAMES101]
+---
 # Assignment1
 
 ## 运行结果

@@ -1,3 +1,8 @@
+---
+title: MIT6.824-lab1-MapReduce
+date: 2022-04-20
+tags: [MIT6.824]
+---
 > 日期: 2022.4.20
 
 # mit6.824 lab1

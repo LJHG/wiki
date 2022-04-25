@@ -1,3 +1,8 @@
+---
+title: GAMES101-assignment5-光线追踪
+date: 2022-03-06
+tags: [GAMES101]
+---
 # Assignment5
 
 光线追踪

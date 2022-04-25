@@ -1,3 +1,8 @@
+---
+title: GAMES101-assignment4-贝塞尔曲线
+date: 2022-02-28
+tags: [GAMES101]
+---
 # Assignment4
 
 ## 1. 运行结果

@@ -1,3 +1,8 @@
+---
+title: GAMES101-assignment2-ZBuffuer
+date: 2021-11-11
+tags: [GAMES101]
+---
 # Assignment2
 
 ## 运行结果

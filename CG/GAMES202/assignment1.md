@@ -1,3 +1,8 @@
+---
+title: GAMES202-Assinment1-实时阴影
+date: 2022-04-09
+tags: [GAMES202]
+---
 > 日期：2022.4.11
 
 # Assignment1-实时阴影

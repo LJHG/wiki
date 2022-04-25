@@ -1,3 +1,8 @@
+---
+title: 记录一次使用pybind内存泄漏的debug过程
+date: 2022-03-30
+tags: [pybind]
+---
 > 日期：2022.3.30
 
 # 记录一次使用pybind内存泄漏的debug过程

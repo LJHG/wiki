@@ -1,3 +1,8 @@
+---
+title: 使用scatter函数来计算onehot向量
+date: 2022-04-06
+tags: [pytorch]
+---
 > 日期：2022.4.6
 
 ## 循环太慢

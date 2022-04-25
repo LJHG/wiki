@@ -1,3 +1,8 @@
+---
+title: 值迭代和策略迭代
+date: 2021-11-27
+tags: [强化学习]
+---
 最近的随机过程作业涉及到了value iteration和policy iteration，于是就去搜了相关的网课[CS229-lecture17](https://www.youtube.com/watch?v=d5gaWTo6kDM)来看，讲的很好，于是做了一些笔记。  
 由于这些东西和强化学习能扯上一点关系，所以就分类到了强化学习。
 

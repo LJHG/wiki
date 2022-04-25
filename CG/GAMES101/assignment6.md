@@ -1,3 +1,8 @@
+---
+title: GAMES101-assignment6-光线追踪的加速
+date: 2022-03-07
+tags: [GAMES101]
+---
 # Assignment6
 
 光线追踪之BVH加速

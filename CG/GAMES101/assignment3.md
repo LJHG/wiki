@@ -1,3 +1,8 @@
+---
+title: GAMES101-assignment3-Blinn-Phongf以及Shader
+date: 2022-01-01
+tags: [GAMES101]
+---
 # Assignment3
 
 两个月没更新了，来填个坑

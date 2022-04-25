@@ -1,3 +1,8 @@
+---
+title: GAMES101-assignment7-路径追踪
+date: 2022-03-13
+tags: [GAMES101]
+---
 # Assignment7
 
 光线追踪之路径追踪

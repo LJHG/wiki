@@ -32,7 +32,8 @@
 
 * [Debug日常](Debug/readme.md)
   * [pybind内存泄漏](Debug/pybind内存泄漏.md)
-
+* [折腾](折腾/readme.md)
+  * [给博客加了个归档页](折腾/blog-archive.md)
 * [算法](./algorithms/README.md)
   * [tag汇总](./algorithms/tag_table.md)
   * [动态规划](algorithms/动态规划/README.md)

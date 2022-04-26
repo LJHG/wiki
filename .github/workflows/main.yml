@@ -24,7 +24,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      
+
+      - name: install dependencies
+        run: npm install gitbook-cli -g
+        
       - name: Generate tag table
         run: python3 ./algorithms/tagtable_generator.py
         

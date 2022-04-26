@@ -27,8 +27,8 @@ jobs:
 
       - name: install dependencies
         run: |
-          nvm install 10.14.1
-          nvm use 10.14.1
+          npm install 10.14.1
+          npm use 10.14.1
           npm install gitbook-cli -g
 
 

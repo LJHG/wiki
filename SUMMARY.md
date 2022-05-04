@@ -91,6 +91,7 @@
     * [LeetCode 445](algorithms/栈/Leetcode445.md)
     * [LeetCode 5394](algorithms/栈/LeetCode5394.md)
   * [链表](algorithms/链表/README.md)
+    * [LeetCode 1823](algorithms/链表/LeetCode1823.md)
     * [LeetCode 23](algorithms/链表/LeetCode23.md)
     * [LeetCode 25](algorithms/链表/LeetCode25.md)
     * [LeetCode 146](algorithms/链表/LeetCode146.md)

@@ -1,43 +1,57 @@
-曾经在LeetCode做了一些题，同时也记录了一些东西，希望整理下来能有点用。
+> 整理做过的算法题
 
-给题目分类不是一件简单的事，有的题可能包含多种方法，所以下面的分类不一定准，或者说**十分粗略**，未来会慢慢完善。
+<body>
+  <main class="content" role="main">
+    <div class="archive">
+    </div>
+  </main>
+  <script>
+    var url = "../algorithmArchive.json"
+    var request = new XMLHttpRequest();
+    request.open("get", url);
+    request.send(null);
+    request.onload = function () {
+      var articles = null
+      if (request.status == 200) {
+        articles = JSON.parse(request.responseText);
+      }
+      writeContent(articles);
+    }
+    function writeContent(articles) {
+      var years = []
+      for (year in articles) {
+        years.push(year)
+      }
+      function cmp(a, b) {
+        return b - a;
+      }
+      //对年份从大到小进行排序
+      years.sort(cmp)
+      for (var idx in years) {
+        yearArticles = articles[years[idx]]
+        var year = document.createElement("h2");
+        year.className = "archive-title"
+        year.textContent = years[idx]
+        document.getElementsByClassName("archive")[0].appendChild(year);
+        for (var i = 0; i < yearArticles.length; i++) {
+          var _article = yearArticles[i];
+          var article = document.createElement("article");
+          article.className = "archive-item"
+          var link = document.createElement("a")
+          //因为_article.url是相对根目录的相对路径，所以如果已经在algorithm路径下，就把algorithm去掉
+          link.href = "./" + _article.url.substring(13)
+          link.className = "archive-item-link"
+          link.textContent = _article.title
+          var date = document.createElement("span")
+          date.className = "archive-item-date"
+          date.textContent = _article.date
+          article.appendChild(link)
+          article.appendChild(date)
+          document.getElementsByClassName("archive")[0].appendChild(article);
+        }
 
-#### [使用tag分类后的表格(丑，慎点)](./tag_table.md)
+      }
+    }
+  </script>
 
-#### [动态规划](动态规划/README.md)
-
-#### [二分](二分查找/README.md)
-
-#### [DFS](DFS/README.md)
-
-#### [排列组合](排列组合/README.md)
-
-#### [树](树/README.md)
-
-#### [栈](栈/README.md)
-
-#### [链表](链表/README.md)
-
-#### [智力题](智力题/README.md)
-
-#### [快速幂](快速幂/README.md)
-
-#### [集合](集合/README.md)
-
-#### [马拉车算法](马拉车算法/README.md)
-
-#### [树状数组](树状数组/README.md)
-
-#### [图](图/README.md)
-
-#### [位运算](位运算/README.md)
-
-#### [优先队列](优先队列/README.md)
-
-#### [双指针](双指针/README.md)
-
-#### [贪心](贪心/README.md)
-
-#### [暴力](暴力/README.md)
-
-#### [其它](其它/README.md)
+</body>

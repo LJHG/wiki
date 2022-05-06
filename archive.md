@@ -4,7 +4,7 @@
     </div>
   </main>
   <script>
-    var url = "./archive.json"
+    var url = "./postsArchive.json"
     var request = new XMLHttpRequest();
     request.open("get", url);
     request.send(null);

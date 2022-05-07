@@ -36,6 +36,7 @@
   * [给博客加了个归档页](折腾/blog-archive.md)
 * [算法](./algorithms/README.md)
   * [tag汇总](./algorithms/tag_table.md)
+  * [LeetCode433](./algorithms/LeetCode433.md)
   * [动态规划](algorithms/动态规划/README.md)
     * [LCP13](algorithms/动态规划/LCP13.md)
     * [LeetCode-coins](algorithms/动态规划/Leetcode-coins.md)

@@ -1,5 +1,6 @@
 标签|题目
 -|-|
+bfs|[最小基因变化---LeetCode433(bfs)](.//LeetCode433.md), [二叉树层序遍历----LeetCode102](./树/LeetCode102.md), [寻宝---LCP13(bfs+状压dp)](./动态规划/LCP13.md),
 回文|[往字符串前面添字符形成的最短回文串---LeetCode214](./马拉车算法/LeetCode214.md),
 马拉车|[往字符串前面添字符形成的最短回文串---LeetCode214](./马拉车算法/LeetCode214.md),
 回文串|[LeetCode05](./马拉车算法/LeetCode05.md),
@@ -11,7 +12,6 @@ BST|[有序链表转换二叉搜索树---LeetCode109](./树/LeetCode109.md), [�
 快慢指针|[有序链表转换二叉搜索树---LeetCode109](./树/LeetCode109.md), [快乐数---LeetCode202判断链表环](./链表/LeetCode202.md),
 记录路径|[好叶子节点对的数量---LeetCode5474(记录路径)](./树/LeetCode5474.md),
 树|[二叉树层序遍历----LeetCode102](./树/LeetCode102.md), [从前序与中序遍历序列构造二叉树---LeetCode105](./树/LeetCode105.md), [收集树上所有苹果---LeetCode5406(碰见树就GG)](./树/LeetCode5406.md), [另一个树的子树---LeetCode572](./树/LeetCode572.md),
-bfs|[二叉树层序遍历----LeetCode102](./树/LeetCode102.md), [寻宝---LCP13(bfs+状压dp)](./动态规划/LCP13.md),
 二叉树|[不同的二叉搜索树II---LeetCode95](./树/LeetCode95.md), [平衡二叉树---LeetCode110](./树/LeetCode110.md), [验证二叉搜索树---LeetCode98](./树/LeetCode98.md),
 递归|[从前序与中序遍历序列构造二叉树---LeetCode105](./树/LeetCode105.md), [二叉树中序遍历---LeetCode94(递归和栈)](./栈/LeetCode94.md), [预测赢家---LeetCode486(博弈)](./动态规划/LeetCode486.md), [第k个排列---LeetCode60(优化的力量)](./排列组合/LeetCode60.md),
 dfs|[收集树上所有苹果---LeetCode5406(碰见树就GG)](./树/LeetCode5406.md), [把二叉搜索树转换为累加树---LeetCode538](./树/LeetCode538.md), [解数独---LeetCode37(优化的力量)](./DFS/LeetCode37.md), [N皇后---LeetCode51(递归和回溯还是有区别的)](./DFS/LeetCode51.md), [建立四叉树---LeetCode427(dfs)](./DFS/LeetCode427.md), [太平洋大西洋水流问题---LeetCode417(dfs)](./DFS/LeetCode417.md), [二叉树中序遍历---LeetCode94(递归和栈)](./栈/LeetCode94.md), [预测赢家---LeetCode486(博弈)](./动态规划/LeetCode486.md), [组合总和---LeetCode39(wsl)](./排列组合/LeetCode39.md), [组合---LeetCode77(不小心把组合做成排列了)](./排列组合/LeetCode77.md), [全排列Ⅱ---LeetCode47(去重)](./排列组合/LeetCode47.md), [组合总和3---LeetCode216](./排列组合/LeetCode216.md), [组合总和2---LeetCode40(答案去重)](./排列组合/LeetCode40.md), [第k个排列---LeetCode60(优化的力量)](./排列组合/LeetCode60.md),

@@ -19,11 +19,21 @@ tags: [MicroRenderer]
 
 1. CommonUtils.cpp。用来存放一些通用函数，比如说读取图片之类的。
 2. MathUtils.cpp。用来存放数学相关的函数，比如说计算MVP矩阵，插值等。
-3. Renderer.cpp。。。无视掉，写了但是我没用它。
+3. Renderer.cpp。渲染相关代码，用来管理渲染的物体，保存shader，以及调用渲染管线渲染等。
 4. Shader.cpp。存放shader代码。
 5. ShadingPipeline.cpp。渲染管线代码，生成渲染结果。
 6. Structure.cpp。定义vetex, frament 以及 mesh的数据类型。
 7. WindowApp.cpp。SDL2相关函数。
+
+> 关于Renderer.cpp和ShadingPipeline.cpp的组织问题：
+>
+> 最开始我是把所有的代码都写到ShadingPipeline.cpp里的，也能够渲染，不过不能再进行更复杂的渲染了，最多就画画三角形，不然的话函数的设计会非常丑陋。
+>
+> 举个例子，如果把shader的创建交给渲染管线来处理，就非常不合理，所以我把它交给了Renderer来管理，并且在初始化渲染管线时再给它。
+>
+> 又或者需要绘制很多物体时，我们会将所有的物体存进一个mesh的vector，然后一个一个画，但是在调用渲染管线时是直接给vertices和indices，那么mesh的管理交给渲染管线这个类又显得很不合理了。
+>
+> 所以最后我把渲染管线这个类里的一些函数分给了Renderer这个类，这样虽然感觉调来调去的更复杂了，但是应该在组织上是更合理了。。。吧🤔
 
 ## 2. 具体细节
 
@@ -95,43 +105,43 @@ public:
 这里展示一下渲染管线的代码：
 
 ```cpp
-void ShadingPipeline::shade(int shadingMode, int rasterizingMode) {
-     //according to indices, every 3 indices organize as a triangle, len(indices) could be greater than len(_vertices)
-     if(shadingMode == SIMPLE_SHADER){
-         shader = new SimpleShader();
-     }
-     VertexData v1,v2,v3;
-     VertexOutData v1o,v2o,v3o;
-     for(int i=0;i<indices.size()/3;i++){
-         v1 = vertices[indices[i*3+0]];
-         v2 = vertices[indices[i*3+1]];
-         v3 = vertices[indices[i*3+2]];
-         //vertex shader
-         v1o = shader->vertexShader(v1);
-         v2o = shader->vertexShader(v2);
-         v3o = shader->vertexShader(v3);
+void ShadingPipeline::shade(const std::vector<VertexData>& _vertices,
+                                const std::vector<unsigned int>& _indices,
+                                int rasterizingMode) {
+        //according to indices, every 3 indices organize as a triangle, len(indices) could be greater than len(_vertices)
 
-         //view port transformation
-         v1o.position = viewPortMatrix * v1o.position;
-         v2o.position = viewPortMatrix * v2o.position;
-         v3o.position = viewPortMatrix * v3o.position;
+        VertexData v1,v2,v3;
+        VertexOutData v1o,v2o,v3o;
+        for(int i=0;i<_indices.size()/3;i++){
+            v1 = _vertices[_indices[i*3+0]];
+            v2 = _vertices[_indices[i*3+1]];
+            v3 = _vertices[_indices[i*3+2]];
+            //vertex shader
+            v1o = shader->vertexShader(v1);
+            v2o = shader->vertexShader(v2);
+            v3o = shader->vertexShader(v3);
 
-         //rasterization
-         // the triangle will appear upside down because it goes like ➡️ x ⬇️ y, but never mind...
-         if(rasterizingMode == LINE){
-             // BresenHam line drawing algorithm
-             bresenhamLineRasterization(v1o,v2o);
-             bresenhamLineRasterization(v1o,v3o);
-             bresenhamLineRasterization(v3o,v2o);
-         }else if(rasterizingMode == FILL){
-             // bounding box inside triangle fill algorithm -> games101 assignment2 and assignment3
-             fillRasterization(v1o,v2o,v3o);
-         }
+            //view port transformation
+            v1o.position = viewPortMatrix * v1o.position;
+            v2o.position = viewPortMatrix * v2o.position;
+            v3o.position = viewPortMatrix * v3o.position;
 
-         // double buffer
-         swapBuffer();
-     }
-}
+            //rasterization
+            // the triangle will appear upside down because it goes like ➡️ x ⬇️ y, but never mind...
+            if(rasterizingMode == LINE){
+                // BresenHam line drawing algorithm
+                bresenhamLineRasterization(v1o,v2o);
+                bresenhamLineRasterization(v1o,v3o);
+                bresenhamLineRasterization(v3o,v2o);
+            }else if(rasterizingMode == FILL){
+                // bounding box inside triangle fill algorithm -> games101 assignment2 and assignment3
+                fillRasterization(v1o,v2o,v3o);
+            }
+
+            // double buffer
+            swapBuffer();
+        }
+   }
 ```
 
 因为这里是直接画三角形，我的vertex shader里直接传递数据，同时fragment shader也是直接传递颜色。所以我传的vertex data就是直接的ndc坐标，经过视图变化过后得到像素坐标，然后就可以进行光栅化了。

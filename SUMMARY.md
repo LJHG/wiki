@@ -6,6 +6,7 @@
   * [MicroRenderer](CG/SoftRasterizer/README.md)
     * [(一) 渲染管线](CG/SoftRasterizer/pipeline.md)
     * [(二) 进入三维](CG/SoftRasterizer/3d.md)
+    * [(三) 着色模型](CG/SoftRasterizer/shading.md)
   * [GAMES101](CG/GAMES101/README.md)
     * [Assignment1](CG/GAMES101/assignment1.md)
     * [Assignment2](CG/GAMES101/assignment2.md)

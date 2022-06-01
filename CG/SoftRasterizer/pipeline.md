@@ -4,6 +4,7 @@ date: 2022-05-24 16:52:48
 tags: [MicroRenderer]
 ---
 # 软光栅器MicroRenderer(一) 渲染管线与三角形 
+代码见：https://github.com/LJHG/MicroRenderer
 
 最近仿照了这位大佬的博客[软渲染器Soft Renderer：3D数学篇 | YangWC's Blog](https://yangwc.com/2019/05/01/SoftRenderer-Math/)来实现一个软光栅器，其中的代码结构基本上参照了它的代码，一边参考一遍自己写把渲染管线实现了一下，在这里稍微记录一下。
 

@@ -4,6 +4,8 @@ date: 2022-06-01 12:06:00
 tags: [MicroRenderer]
 ---
 # 软光栅器MicroRenderer(三) 着色器
+代码见：https://github.com/LJHG/MicroRenderer
+
 本节会对软渲染器剩下的内容进行说明，主要包括：
 1. 模型加载
 2. 贴图uv颜色采样

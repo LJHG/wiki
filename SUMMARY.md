@@ -19,6 +19,7 @@
     * [Assignment1](CG/GAMES202/assignment1.md)
   * [OpenGL](CG/OpenGL/README.md)
     * [使用assimp读取没有贴图的模型](CG/OpenGL/assimp_material.md)
+  * [如何将imgui跑起来](CG/imgui_run.md)
   
 * [ML/DL/RL](MLDLRL/README.md)
   * [机器学习](MLDLRL/ML/README.md)

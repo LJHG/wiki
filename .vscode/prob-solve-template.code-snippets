@@ -17,6 +17,7 @@
 			"---",
 			"# 起个标题---$TM_FILENAME",
 			"> 日期: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"",
 			"## 题目描述",
 			"    ",
 			"## 示例",

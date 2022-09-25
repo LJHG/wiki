@@ -118,6 +118,7 @@
     * [LeetCode5477](./algorithms/LeetCode/LeetCode5477.md)
     * [LeetCode5480](./algorithms/LeetCode/LeetCode5480.md)
     * [LeetCode5500](./algorithms/LeetCode/LeetCode5500.md)
+    * [LeetCode6190](./algorithms/LeetCode/LeetCode6190.md)
     * [LeetCode-jz11](./algorithms/LeetCode/LeetCode-jz11.md)
     * [LeetCode-jz51](./algorithms/LeetCode/LeetCode-jz51.md)
     * [LeetCode-m56](./algorithms/LeetCode/LeetCode-m56.md)

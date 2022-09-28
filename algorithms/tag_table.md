@@ -60,14 +60,14 @@ list|[合并K个排序链表](./LeetCode/LeetCode23.md) <br />
 set|[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />[绝对值差不超过限制的最长连续子数组---LeetCode5402](./LeetCode/LeetCode5402.md) <br />
 出度入度|[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />
 快慢指针法|[寻找重复数---LeetCode287(快慢指针)](./LeetCode/LeetCode287.md) <br />
-双指针|[两数之和II-输入有序数组---LeetCode167(二分或双指针)](./LeetCode/LeetCode167.md) <br />[无重复最长子串---LeetCode03](./LeetCode/LeetCode03.md) <br />[绝对值差不超过限制的最长连续子数组---LeetCode5402](./LeetCode/LeetCode5402.md) <br />
+双指针|[两数之和II-输入有序数组---LeetCode167(二分或双指针)](./LeetCode/LeetCode167.md) <br />[无重复最长子串---LeetCode03](./LeetCode/LeetCode03.md) <br />[盛最多水的容器---LeetCode11(贪心双指针)](./LeetCode/LeetCode11.md) <br />[绝对值差不超过限制的最长连续子数组---LeetCode5402](./LeetCode/LeetCode5402.md) <br />
 树|[二叉树层序遍历----LeetCode102](./LeetCode/LeetCode102.md) <br />[从前序与中序遍历序列构造二叉树---LeetCode105](./LeetCode/LeetCode105.md) <br />[收集树上所有苹果---LeetCode5406(碰见树就GG)](./LeetCode/LeetCode5406.md) <br />[另一个树的子树---LeetCode572](./LeetCode/LeetCode572.md) <br />
 二叉树|[不同的二叉搜索树II---LeetCode95](./LeetCode/LeetCode95.md) <br />[平衡二叉树---LeetCode110](./LeetCode/LeetCode110.md) <br />[验证二叉搜索树---LeetCode98](./LeetCode/LeetCode98.md) <br />
 矩阵|[最大正方形---LeetCode221(能想到怎么dp就很简单的dp)](./LeetCode/LeetCode221.md) <br />
 滑动窗口|[无重复最长子串---LeetCode03](./LeetCode/LeetCode03.md) <br />[绝对值差不超过限制的最长连续子数组---LeetCode5402](./LeetCode/LeetCode5402.md) <br />
 链表找环|[快乐数---LeetCode202判断链表环](./LeetCode/LeetCode202.md) <br />
 字符串数组|[重新排列句子中的单词---LeetCode5413(在排序时长度相同的保持相对位置不变)](./LeetCode/LeetCode5413.md) <br />
-贪心|[跳跃游戏---LeetCode45](./LeetCode/LeetCode45.md) <br />[排布二进制网格的最少交换次数---LeetCode5477](./LeetCode/LeetCode5477.md) <br />
+贪心|[跳跃游戏---LeetCode45](./LeetCode/LeetCode45.md) <br />[盛最多水的容器---LeetCode11(贪心双指针)](./LeetCode/LeetCode11.md) <br />[排布二进制网格的最少交换次数---LeetCode5477](./LeetCode/LeetCode5477.md) <br />
 优先队列|[前K个高频元素---LeetCode347(优先队列)](./LeetCode/LeetCode347.md) <br />
 堆|[前K个高频元素---LeetCode347(优先队列)](./LeetCode/LeetCode347.md) <br />
 模拟|[加油站---LeetCode134(morethan模拟)](./LeetCode/LeetCode134.md) <br />

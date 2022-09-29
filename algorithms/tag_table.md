@@ -35,7 +35,7 @@ BinarySerach|[山顶数组中查找目标值(二分法)--LeetCode1095](./LeetCod
 BFS|[用BFS解决交换问题---LeetCode854(BFS)](./LeetCode/LeetCode854.md) <br />[删除无效的括号---LeetCode301(BFS)](./LeetCode/LeetCode301.md) <br />[完全平方数---LeetCode279(DP/BFS)](./LeetCode/LeetCode279.md) <br />
 智力题|[到达终点---LeetCode780](./LeetCode/LeetCode780.md) <br />[加油站---LeetCode134(morethan模拟)](./LeetCode/LeetCode134.md) <br />
 map|[205周赛记录---(学会用map+并查集太强了)](./LeetCode/LeetCode-weekly205.md) <br />[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />
-并查集|[205周赛记录---(学会用map+并查集太强了)](./LeetCode/LeetCode-weekly205.md) <br />
+并查集|[205周赛记录---(学会用map+并查集太强了)](./LeetCode/LeetCode-weekly205.md) <br />[省份数量---LeetCode547(并查集)](./LeetCode/LeetCode547.md) <br />
 连通|[205周赛记录---(学会用map+并查集太强了)](./LeetCode/LeetCode-weekly205.md) <br />
 图|[205周赛记录---(学会用map+并查集太强了)](./LeetCode/LeetCode-weekly205.md) <br />[课程表---LeetCode210(拓扑排序)](./LeetCode/LeetCode210.md) <br />[可以到达所有点的最少点数目---LeetCode5480](./LeetCode/LeetCode5480.md) <br />
 暴力|[24点---LeetCode679](./LeetCode/LeetCode679.md) <br />

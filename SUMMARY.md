@@ -39,6 +39,7 @@
 
 * [Debug日常](Debug/readme.md)
   * [pybind内存泄漏](Debug/pybind内存泄漏.md)
+  * [cuda和cpu的计算误差](Debug/cuda和cpu的计算误差.md)
 * [折腾](折腾/readme.md)
   * [给博客加了个归档页](折腾/blog-archive.md)
 * [算法](./algorithms/README.md)

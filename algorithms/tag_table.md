@@ -19,7 +19,7 @@ MergeSort|[逆序对](./LeetCode/LeetCode-jz51.md) <br />
 前缀和|[和可被K整除的子数组---LeetCode974(我数学不太好)](./LeetCode/LeetCode974.md) <br />[找和为k连续子数组---LeetCode560(前缀和+哈希优化)](./LeetCode/LeetCode560.md) <br />[每个元音包含偶数次的最长子字符串---LeetCode1371(前缀和+哈希优化+状态压缩)](./LeetCode/LeetCode1371.md) <br />[可获得最大点数（乱用DP=炸内存）](./LeetCode/LeetCode5393.md) <br />[乘积为正数的最长子数组长度---LeetCode5500](./LeetCode/LeetCode5500.md) <br />
 哈希优化|[和可被K整除的子数组---LeetCode974(我数学不太好)](./LeetCode/LeetCode974.md) <br />
 prefix|[找和为k连续子数组---LeetCode560(前缀和+哈希优化)](./LeetCode/LeetCode560.md) <br />
-STL|[Leetcode445两数相加(Stack)](./LeetCode/Leetcode445.md) <br />
+STL|[Leetcode445两数相加(Stack)](./LeetCode/Leetcode445.md) <br />[重新安排行程---LeetCode332(STL)](./LeetCode/LeetCode332.md) <br />
 Stack|[Leetcode445两数相加(Stack)](./LeetCode/Leetcode445.md) <br />[二叉树的前序遍历---LeetCode144](./LeetCode/LeetCode144.md) <br />
 位运算|[使用xor来找只出现了一次的数字---LeetCode-m56](./LeetCode/LeetCode-m56.md) <br />
 亦或|[使用xor来找只出现了一次的数字---LeetCode-m56](./LeetCode/LeetCode-m56.md) <br />
@@ -31,7 +31,7 @@ Stack|[Leetcode445两数相加(Stack)](./LeetCode/Leetcode445.md) <br />[二叉�
 不要乱用dp|[可获得最大点数（乱用DP=炸内存）](./LeetCode/LeetCode5393.md) <br />
 BinarySerach|[山顶数组中查找目标值(二分法)--LeetCode1095](./LeetCode/LeetCode1095.md) <br />
 排列组合|[组合总和---LeetCode39(wsl)](./LeetCode/LeetCode39.md) <br />[组合总和3---LeetCode216](./LeetCode/LeetCode216.md) <br />[组合总和2---LeetCode40(答案去重)](./LeetCode/LeetCode40.md) <br />
-回溯|[组合总和---LeetCode39(wsl)](./LeetCode/LeetCode39.md) <br />[组合---LeetCode77(不小心把组合做成排列了)](./LeetCode/LeetCode77.md) <br />[全排列Ⅱ---LeetCode47(去重)](./LeetCode/LeetCode47.md) <br />[解数独---LeetCode37(优化的力量)](./LeetCode/LeetCode37.md) <br />[N皇后---LeetCode51(递归和回溯还是有区别的)](./LeetCode/LeetCode51.md) <br />[组合总和3---LeetCode216](./LeetCode/LeetCode216.md) <br />[组合总和2---LeetCode40(答案去重)](./LeetCode/LeetCode40.md) <br />
+回溯|[组合总和---LeetCode39(wsl)](./LeetCode/LeetCode39.md) <br />[组合---LeetCode77(不小心把组合做成排列了)](./LeetCode/LeetCode77.md) <br />[全排列Ⅱ---LeetCode47(去重)](./LeetCode/LeetCode47.md) <br />[解数独---LeetCode37(优化的力量)](./LeetCode/LeetCode37.md) <br />[N皇后---LeetCode51(递归和回溯还是有区别的)](./LeetCode/LeetCode51.md) <br />[组合总和3---LeetCode216](./LeetCode/LeetCode216.md) <br />[组合总和2---LeetCode40(答案去重)](./LeetCode/LeetCode40.md) <br />[重新安排行程---LeetCode332(STL)](./LeetCode/LeetCode332.md) <br />
 BFS|[用BFS解决交换问题---LeetCode854(BFS)](./LeetCode/LeetCode854.md) <br />[删除无效的括号---LeetCode301(BFS)](./LeetCode/LeetCode301.md) <br />[完全平方数---LeetCode279(DP/BFS)](./LeetCode/LeetCode279.md) <br />
 智力题|[到达终点---LeetCode780](./LeetCode/LeetCode780.md) <br />[加油站---LeetCode134(morethan模拟)](./LeetCode/LeetCode134.md) <br />
 map|[205周赛记录---(学会用map+并查集太强了)](./LeetCode/LeetCode-weekly205.md) <br />[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />

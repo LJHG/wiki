@@ -258,5 +258,73 @@ public:
 
 这道题还可以做一些更nb的优化，这里就就不多说了。  
 
+
+
+### 一种更加易读的回溯板子写法
+
+像这种一般来说还是写一个dfs，然后单独把判断是否合法的函数抽离出来写可读性会更好。
+
+这里需要注意一下，像这种只有一个答案，或者说有一个答案就行的需要把dfs的返回值设置为bool，这和那种一次性返回很多答案的不太一样。
+
+与[LeetCode332 · GitBook (ljhblog.top)](https://www.ljhblog.top/algorithms/LeetCode/LeetCode332.html)这道题不一样，虽然dfs都是bool，但是本题还需要对位置先做一个valid的判断，因此逻辑应该是
+
+```cpp
+if(isValid(i,j,k)){ //这里判断时不会去改变棋盘的值
+	board[i][j] = k; //设置棋盘值
+  int valid2 = dfs(board); 
+  if(valid2) return true;
+  board[i][j] = '.';
+}
+```
+
+此外，还要注意一下dfs函数里面什么时候应该返回true，什么时候应该返回false，这些都是坑点。
+
+```cpp
+class Solution {
+public:
+
+    bool isValid(vector<vector<char>>& board, int i, int j, char k){
+        //列
+        for(int row=0;row<board.size();row++){
+            if(row != i && board[row][j] == k) return false;
+        }
+        //行
+        for(int col=0;col<board[0].size();col++){
+            if(col != j && board[i][col] == k) return false;
+        }
+        //九宫格
+        for(int x = (i/3)*3; x<(i/3)*3+3; x++){
+            for(int y = (j/3)*3; y<(j/3)*3+3; y++){
+                if( x==i && y==j) continue;
+                if(board[x][y] == k) return false;
+            } 
+        }
+        return true;
+    }
+
+    bool dfs(vector<vector<char>>& board){
+        for(int i=0;i<board.size();i++){
+            for(int j=0;j<board[0].size();j++){
+                if(board[i][j] != '.') continue;
+                //尝试填数字
+                for(int k='1';k<='9';k++){
+                    if(isValid(board,i,j,k) == true){
+                        board[i][j] = k;
+                        if(dfs(board)) return true;
+                    }
+                    board[i][j] = '.';        
+                }
+                return false;
+            }
+        }
+        return true;
+    }
+
+    void solveSudoku(vector<vector<char>>& board) {
+        dfs(board);
+    }
+};
+```
+
 ## 题目链接：  
 https://leetcode-cn.com/problems/sudoku-solver/

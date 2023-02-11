@@ -462,6 +462,74 @@ public:
 ```
 
 
+
+### 回溯板子写法
+
+上面的回溯写得比较杂糅，其实可以写得比较好看，例如：
+
+```cpp
+class Solution {
+public:
+
+    vector<vector<string>> ans;
+    vector<string> chessBoard;
+    int N;
+
+    bool isValid(int row, int col){
+        //不需要检查行了
+        //同时只需要查询当前行以上的元素
+        
+        //列
+        for(int i = 0; i<row; i++){
+            if(chessBoard[i][col] == 'Q')
+                return false;
+        }
+        //主对角线
+        for(int i = row-1, j = col-1; i>=0 && j>=0 ; i--,j--){
+            if(chessBoard[i][j] == 'Q')
+                return false;
+        }
+
+        //次对角线
+        for(int i = row-1, j = col+1; i>=0 && j<N ; i--,j++){
+            if(chessBoard[i][j] == 'Q')
+                return false;
+        }
+        return true;
+    }
+
+    void dfs(int row){
+        if(row == N){
+            ans.push_back(chessBoard);
+            return;
+        }
+        for(int col=0;col<N;col++){
+            if(isValid(row,col)){
+                chessBoard[row][col] = 'Q';
+                dfs(row+1);
+                chessBoard[row][col] = '.';
+            }
+        }
+    }
+
+    vector<vector<string>> solveNQueens(int n) {
+        for(int i=0;i<n;i++){
+            string tmp = "";
+            for(int j=0;j<n;j++){
+                tmp += ".";
+            }
+            chessBoard.push_back(tmp);
+        }
+        N = n;
+        dfs(0);
+        return ans;
+    }
+};
+```
+
+
+
 ## 题目链接：  
+
 https://leetcode-cn.com/problems/n-queens/
 [一个讲的不错的题解](https://leetcode-cn.com/problems/n-queens/solution/nhuang-hou-jing-dian-hui-su-suan-fa-tu-wen-xiang-j/)

@@ -99,6 +99,7 @@
     * [LeetCode445](./algorithms/LeetCode/LeetCode445.md)
     * [LeetCode486](./algorithms/LeetCode/LeetCode486.md)
     * [LeetCode491](./algorithms/LeetCode/LeetCode491.md)
+    * [LeetCode491](./algorithms/LeetCode/LeetCode494.md)
     * [LeetCode538](./algorithms/LeetCode/LeetCode538.md)
     * [LeetCode547](./algorithms/LeetCode/LeetCode547.md)
     * [LeetCode560](./algorithms/LeetCode/LeetCode560.md)

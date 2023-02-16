@@ -109,6 +109,7 @@
     * [LeetCode974](./algorithms/LeetCode/LeetCode974.md)
     * [LeetCode983](./algorithms/LeetCode/LeetCode983.md)
     * [LeetCode1025](./algorithms/LeetCode/LeetCode1025.md)
+    * [LeetCode1025](./algorithms/LeetCode/LeetCode1049.md)
     * [LeetCode1095](./algorithms/LeetCode/LeetCode1095.md)
     * [LeetCode1371](./algorithms/LeetCode/LeetCode1371.md)
     * [LeetCode1458](./algorithms/LeetCode/LeetCode1458.md)

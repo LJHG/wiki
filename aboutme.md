@@ -1,6 +1,6 @@
 # About me
 
-Hi, I'm LJHG, currently a second-year master's student in Sun Yat-sen University. I'm expected to graduate in Summer 2024.
+Hi, I'm Junhua Long, currently a second-year master's student in Sun Yat-sen University. I'm expected to graduate in Summer 2024.
 
 I'm globally interedted in  backend/infrastructure development, computer graphics and point cloud processing.
 

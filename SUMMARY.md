@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [About me](aboutme.md)
 * [归档](archive.md)
 * [计算机图形学](CG/README.md)
   * [MicroRenderer](CG/SoftRasterizer/README.md)

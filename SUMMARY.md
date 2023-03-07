@@ -143,6 +143,7 @@
     * [LeetCode-jz51](./algorithms/LeetCode/LeetCode-jz51.md)
     * [LeetCode-m56](./algorithms/LeetCode/LeetCode-m56.md)
     * [LeetCode-LCP13](./algorithms/LeetCode/LeetCode-LCP13.md)
+    * [LeetCode-LCP64](./algorithms/LeetCode/LeetCode-LCP64.md)
     * [LeetCodejz-coins](./algorithms/LeetCode/LeetCode-coins.md)
     * [LeetCode-weekly205](./algorithms/LeetCode/LeetCode-weekly205.md)
     * [LeetCode-FallContest2020](./algorithms/LeetCode/LeetCode-FallContest2020.md)

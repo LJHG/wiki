@@ -2,7 +2,7 @@
 
 Hi, I'm Junhua Long, currently a second-year master's student in Sun Yat-sen University. I'm expected to graduate in Summer 2024.
 
-I'm globally interested in  backend/infrastructure development, computer graphics and point cloud processing.
+I'm broadly interested in  backend/infrastructure development, computer graphics and point cloud processing.
 
 
 
@@ -22,7 +22,7 @@ I'm globally interested in  backend/infrastructure development, computer graphic
 
 - **OctFormer: Efficient Octree-based Transformer for Point Cloud Compression with Local Enhancement**
 
-  Mingyue Cui, **Junhua Long**, Mingjian Feng, Boyang LI, Kai Huang. (student first author)
+  Mingyue Cui, **Junhua Long**, Mingjian Feng, Boyang Li, Kai Huang. (student first author)
 
   *Proceedings of the AAAI Conference on Artificial Intelligence. 2023 (Oral)*
 

@@ -125,6 +125,7 @@
     * [LeetCode2385](./algorithms/LeetCode/LeetCode2585.md)
     * [LeetCode2400](./algorithms/LeetCode/LeetCode2400.md)
     * [LeetCode2560](./algorithms/LeetCode/LeetCode2560.md)
+    * [LeetCode2581](./algorithms/LeetCode/LeetCode2581.md)
     * [LeetCode5393](./algorithms/LeetCode/LeetCode5393.md)
     * [LeetCode5394](./algorithms/LeetCode/LeetCode5394.md)
     * [LeetCode5400](./algorithms/LeetCode/LeetCode5400.md)

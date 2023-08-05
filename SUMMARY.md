@@ -75,6 +75,7 @@
     * [LeetCode109](./algorithms/LeetCode/LeetCode109.md)
     * [LeetCode110](./algorithms/LeetCode/LeetCode110.md)
     * [LeetCode121](./algorithms/LeetCode/LeetCode121.md)
+    * [LeetCode124](./algorithms/LeetCode/LeetCode124.md)
     * [LeetCode134](./algorithms/LeetCode/LeetCode134.md)
     * [LeetCode139](./algorithms/LeetCode/LeetCode139.md)
     * [LeetCode144](./algorithms/LeetCode/LeetCode144.md)

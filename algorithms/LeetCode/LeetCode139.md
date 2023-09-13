@@ -37,6 +37,45 @@ tags: [dp]
 
 ## 解题思路
 
+### 备忘录思路
+
+个人感觉使用dfs + 备忘录的方式会更加清晰，所以把这个题解放在前面。
+
+```cpp
+class Solution {
+public:
+    // dfs + 备忘录写法
+    map<pair<string,int>, bool> m;
+    bool dfs(string& s, int idx, vector<string>& wordDict){
+        if(idx == s.size()) return true;
+        if(m.count(make_pair(s,idx))) return m[make_pair(s,idx)];
+        bool ans = false;
+        for(string& word:wordDict){
+            if(s.size() - idx < word.size()) continue;
+            bool valid = true;
+            for(int i=0;i<word.size();i++){
+                if(s[idx+i] != word[i]){
+                    valid = false;
+                    break;
+                }
+            }
+            if(valid){
+                ans |= dfs(s, idx+word.size(), wordDict);
+            }
+        }
+        m[make_pair(s,idx)] = ans;
+        return ans;
+    }
+    bool wordBreak(string s, vector<string>& wordDict) {
+        return dfs(s, 0, wordDict);
+    }
+};
+```
+
+
+
+### 背包思路
+
 首先，可以重复使用，所以判断为完全背包。
 
 因为顺序是很重要的，比如说 leetcode 是 由 leet 和 code 组成的，而不是由 code 和 leet 组成的，所以完全背包应该先遍历容量，再遍历物品。

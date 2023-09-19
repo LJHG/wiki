@@ -34,6 +34,7 @@
     * [value&policy iteration](MLDLRL/RL/value&policy_iteration.md)
 * [CPP](./CPP/README.md)
   * [一些CPP简单的提速方法](./CPP/compiler_speedUp.md)
+  * [手写一个vector](./CPP/handcrafted_vector.md)
 * [分布式系统](DistributedSys/README.md)
   * [MIT6.824](DistributedSys/mit6.824/readme.md)
     * [lab1-mapreduce](DistributedSys/mit6.824/lab1.md)

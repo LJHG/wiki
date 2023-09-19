@@ -10,7 +10,7 @@ tags: [vector, cpp]
 
 [手写一个 std::vector 可以有多复杂？_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1iX4y1w7x4/?spm_id_from=333.999.0.0&vd_source=c0c1ccbf42eada4efb166a6acf39141b)
 
-直接上代码：
+直接上代码(似乎太长就没有了高亮。。。？将就看吧)：
 
 ```cpp
 #include<bits/stdc++.h>

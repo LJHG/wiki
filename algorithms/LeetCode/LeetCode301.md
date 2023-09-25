@@ -32,6 +32,108 @@ tags: [BFS]
 
 ## 解题思路
 
+### 回溯 + 剪枝
+
+> update on 2023.9.25
+
+个人感觉回溯加剪枝的方式比较好想也比较好写，唯一不太好写的地方在于剪枝。
+
+本来一般来说，是走到s的末尾再去判断tmp是否valid，如果是的话，那么就加入答案。
+
+但是这道题不剪枝过不了，应该算是被卡常数了，虽然2^25只有3000万，但是每一次判断一下，差不多是一个长度为30的遍历就到1e9了，所以是有可能过不了的。
+
+```
+>>> 2 ** 25
+33554432
+>>> 33554432 * 30
+1006632960
+```
+
+所以这里要剪枝，提供了一个`isPossibleValid`函数来看当前的答案是否还有可能合法，因为存在一些情况使得它肯定会不合法的，比如：
+
+1. 当前的右括号数量比左括号多: ), )()
+2. 当前的左括号数量已经大于后续还没有处理的字符数量，无法有足够多的右括号与之匹配(这个剪枝很重要，不加这个就过不了)，例如 ((((((((((((((((((((((aaaaaa
+
+```cpp
+class Solution {
+public:
+    int totalSize;
+
+    bool isValid(string& s){
+        int curLeft = 0;
+        for(char c:s){
+            if(c == '(') curLeft += 1;
+            else if(c == ')'){
+                if(curLeft == 0) return false;
+                else curLeft -= 1;
+            }
+        }
+        return curLeft == 0;
+    }
+
+    bool isPossibleValid(string &s, int idx){
+        int curLeft = 0;
+        int curRight = 0;
+        for(char c:s){
+            if(c == '('){
+                curLeft += 1;
+            }else if(c == ')'){
+                curRight += 1;
+            }
+        }
+        if(curLeft < curRight) return false;
+        // 这个剪枝很有用
+        if(curLeft - curRight > totalSize - idx ) return false;
+        return curLeft >= curRight;
+    }
+
+    vector<string> ans;
+    unordered_set<string> st;
+    string tmp;
+    void dfs(string& s, int idx){
+        // 剪枝
+        if(!isPossibleValid(tmp, idx)) return;
+        if(idx == s.size()){
+            if(isValid(tmp) && st.count(tmp) == 0){
+                ans.push_back(tmp);
+                st.insert(tmp);
+            }
+            return;
+        }
+        tmp += s[idx];
+        dfs(s, idx+1);
+        tmp.pop_back();
+        dfs(s, idx+1);
+    }
+
+    static bool cmp(string& a, string& b){
+        return a.size() > b.size();
+    }
+    
+    vector<string> removeInvalidParentheses(string s) {
+        totalSize = s.size();
+        dfs(s, 0);
+        sort(ans.begin(), ans.end(), cmp);
+        int len = ans[0].size();
+        vector<string> _ans;
+        for(string& x:ans){
+            if(x.size() == len){
+                _ans.push_back(x);
+            }else{
+                break;
+            }
+        }
+        return _ans;
+    }
+};
+```
+
+
+
+
+
+### bfs
+
 感觉逐渐掌握BFS，这道题要求的是删除**最小数量**的括号，那么可以通过BFS的方式一点一点地把结果构造出来。
 
 这道题最后做出来时间勉强飘过，感觉时间卡的不是很死，因为我频繁的int转string应该会让性能损失很多，不过应该是有方法直接在int上做valid的判断，或者说不用int全用string？

@@ -45,7 +45,7 @@ map|[205周赛记录---(学会用map+并查集太强了)](./LeetCode/LeetCode-we
 |[秋季编程大赛记录](./LeetCode/LeetCode-FallContest2020.md) <br />[乘积最大子数组---LeetCode152(不会真的有人以为是前缀和吧)](./LeetCode/LeetCode152.md) <br />[收藏清单---LeetCode5414(能线性扫就别搞两重循环了)](./LeetCode/LeetCode5414.md) <br />[找出数组游戏的赢家---LeetCode5476](./LeetCode/LeetCode5476.md) <br />[2022秋季编程大赛记录](./LeetCode/LeetCode-FallContest2022.md) <br />[零钱兑换II---LeetCode518(完全背包)](./LeetCode/LeetCode518.md) <br />
 组合|[组合---LeetCode77(不小心把组合做成排列了)](./LeetCode/LeetCode77.md) <br />
 排列|[组合---LeetCode77(不小心把组合做成排列了)](./LeetCode/LeetCode77.md) <br />[全排列Ⅱ---LeetCode47(去重)](./LeetCode/LeetCode47.md) <br />[下一个排列---LeetCode31(新的思路)](./LeetCode/LeetCode31.md) <br />
-单调栈|[柱状图中最大的矩形---LeetCode84(单调栈)](./LeetCode/LeetCode84.md) <br />
+单调栈|[柱状图中最大的矩形---LeetCode84(单调栈)](./LeetCode/LeetCode84.md) <br />[美丽塔---LeetCode2866(单调栈)](./LeetCode/LeetCode2866.md) <br />
 stack|[柱状图中最大的矩形---LeetCode84(单调栈)](./LeetCode/LeetCode84.md) <br />[二叉树中序遍历---LeetCode94(递归和栈)](./LeetCode/LeetCode94.md) <br />
 bfs|[寻宝---LCP13(bfs+状压dp)](./LeetCode/LeetCode-LCP13.md) <br />[二叉树层序遍历----LeetCode102](./LeetCode/LeetCode102.md) <br />[最小基因变化---LeetCode433(bfs)](./LeetCode/LeetCode433.md) <br />
 状态压缩|[寻宝---LCP13(bfs+状压dp)](./LeetCode/LeetCode-LCP13.md) <br />

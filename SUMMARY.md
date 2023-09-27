@@ -133,6 +133,7 @@
     * [LeetCode2560](./algorithms/LeetCode/LeetCode2560.md)
     * [LeetCode2581](./algorithms/LeetCode/LeetCode2581.md)
     * [LeetCode2866](./algorithms/LeetCode/LeetCode2866.md)
+    * [LeetCode2867](./algorithms/LeetCode/LeetCode2867.md)
     * [LeetCode5393](./algorithms/LeetCode/LeetCode5393.md)
     * [LeetCode5394](./algorithms/LeetCode/LeetCode5394.md)
     * [LeetCode5400](./algorithms/LeetCode/LeetCode5400.md)

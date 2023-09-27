@@ -76,7 +76,7 @@ set|[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />[绝对�
 堆|[前K个高频元素---LeetCode347(优先队列)](./LeetCode/LeetCode347.md) <br />
 模拟|[加油站---LeetCode134(morethan模拟)](./LeetCode/LeetCode134.md) <br />
 快速幂|[Pow(x,n)---LeetCode50(快速幂)](./LeetCode/LeetCode50.md) <br />
-树形dp|[二叉树里的最大路径和---LeetCode124(别再错了)](./LeetCode/LeetCode124.md) <br />
+树形dp|[二叉树里的最大路径和---LeetCode124(别再错了)](./LeetCode/LeetCode124.md) <br />[统计树中的合法路径数目---LeetCode2867(树形dp)](./LeetCode/LeetCode2867.md) <br />
 邻接表|[收集树上所有苹果---LeetCode5406(碰见树就GG)](./LeetCode/LeetCode5406.md) <br />
 背包问题|[Leetcode_coins](./LeetCode/LeetCode-coins.md) <br />
 回文串|[LeetCode05](./LeetCode/LeetCode05.md) <br />
@@ -92,6 +92,7 @@ DFS|[Leetcode199二叉树右视图(DFS)](./LeetCode/Leetcode199.md) <br />[验�
 中序遍历|[验证二叉搜索树---LeetCode98](./LeetCode/LeetCode98.md) <br />[恢复二叉搜索树---LeetCode99(DFS+中序遍历)](./LeetCode/LeetCode99.md) <br />
 栈溢出|[对角线遍历---内存开到爆怎么办？用vector吧](./LeetCode/LeetCode5394.md) <br />
 数组越界|[对角线遍历---内存开到爆怎么办？用vector吧](./LeetCode/LeetCode5394.md) <br />
+质数|[统计树中的合法路径数目---LeetCode2867(树形dp)](./LeetCode/LeetCode2867.md) <br />
 DP|[完全平方数---LeetCode279(DP/BFS)](./LeetCode/LeetCode279.md) <br />
 分析|[除数博弈---LeetCode1025(智力题)](./LeetCode/LeetCode1025.md) <br />
 双序列dp|[两个子序列的最大点积---LeetCode1458(双序列dp)](./LeetCode/LeetCode1458.md) <br />

@@ -172,3 +172,5 @@ public:
 ## 题目链接
 
 [2866. 美丽塔 II - 力扣（LeetCode）](https://leetcode.cn/problems/beautiful-towers-ii/description/)
+
+[单调栈【力扣周赛 364】_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1yu4y1z7sE/?spm_id_from=333.337.search-card.all.click&vd_source=c0c1ccbf42eada4efb166a6acf39141b)

@@ -49,7 +49,7 @@ map|[205周赛记录---(学会用map+并查集太强了)](./LeetCode/LeetCode-we
 stack|[柱状图中最大的矩形---LeetCode84(单调栈)](./LeetCode/LeetCode84.md) <br />[二叉树中序遍历---LeetCode94(递归和栈)](./LeetCode/LeetCode94.md) <br />
 bfs|[寻宝---LCP13(bfs+状压dp)](./LeetCode/LeetCode-LCP13.md) <br />[二叉树层序遍历----LeetCode102](./LeetCode/LeetCode102.md) <br />[最小基因变化---LeetCode433(bfs)](./LeetCode/LeetCode433.md) <br />
 状态压缩|[寻宝---LCP13(bfs+状压dp)](./LeetCode/LeetCode-LCP13.md) <br />
-栈|[二叉树中序遍历---LeetCode94(递归和栈)](./LeetCode/LeetCode94.md) <br />[二叉树的前序遍历---LeetCode144](./LeetCode/LeetCode144.md) <br />
+栈|[二叉树中序遍历---LeetCode94(递归和栈)](./LeetCode/LeetCode94.md) <br />[二叉树的前序遍历---LeetCode144](./LeetCode/LeetCode144.md) <br />[字符串解码---LeetCode394(栈)](./LeetCode/LeetCode394.md) <br />
 回文|[往字符串前面添字符形成的最短回文串---LeetCode214](./LeetCode/LeetCode214.md) <br />
 马拉车|[往字符串前面添字符形成的最短回文串---LeetCode214](./LeetCode/LeetCode214.md) <br />
 记录路径|[好叶子节点对的数量---LeetCode5474(记录路径)](./LeetCode/LeetCode5474.md) <br />

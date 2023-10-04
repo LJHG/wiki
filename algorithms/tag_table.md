@@ -56,13 +56,13 @@ bfs|[寻宝---LCP13(bfs+状压dp)](./LeetCode/LeetCode-LCP13.md) <br />[二叉�
 剪枝|[全排列Ⅱ---LeetCode47(去重)](./LeetCode/LeetCode47.md) <br />[第k个排列---LeetCode60(优化的力量)](./LeetCode/LeetCode60.md) <br />
 去重|[全排列Ⅱ---LeetCode47(去重)](./LeetCode/LeetCode47.md) <br />
 拓扑排序|[课程表---LeetCode210(拓扑排序)](./LeetCode/LeetCode210.md) <br />
-哈希|[LRU缓存机制---LeetCode146(链表好像变香了)](./LeetCode/LeetCode146.md) <br />
+哈希|[LRU缓存机制---LeetCode146(链表好像变香了)](./LeetCode/LeetCode146.md) <br />[找到字符串中所有字符异位词---LeetCode428(双指针哈希表)](./LeetCode/LeetCode428.md) <br />
 list|[合并K个排序链表](./LeetCode/LeetCode23.md) <br />
 集合|[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />
 set|[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />[绝对值差不超过限制的最长连续子数组---LeetCode5402](./LeetCode/LeetCode5402.md) <br />
 出度入度|[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />
 快慢指针法|[寻找重复数---LeetCode287(快慢指针)](./LeetCode/LeetCode287.md) <br />
-双指针|[两数之和II-输入有序数组---LeetCode167(二分或双指针)](./LeetCode/LeetCode167.md) <br />[无重复最长子串---LeetCode03](./LeetCode/LeetCode03.md) <br />[盛最多水的容器---LeetCode11(贪心双指针)](./LeetCode/LeetCode11.md) <br />[绝对值差不超过限制的最长连续子数组---LeetCode5402](./LeetCode/LeetCode5402.md) <br />
+双指针|[两数之和II-输入有序数组---LeetCode167(二分或双指针)](./LeetCode/LeetCode167.md) <br />[无重复最长子串---LeetCode03](./LeetCode/LeetCode03.md) <br />[找到字符串中所有字符异位词---LeetCode428(双指针哈希表)](./LeetCode/LeetCode428.md) <br />[盛最多水的容器---LeetCode11(贪心双指针)](./LeetCode/LeetCode11.md) <br />[绝对值差不超过限制的最长连续子数组---LeetCode5402](./LeetCode/LeetCode5402.md) <br />
 树|[二叉树层序遍历----LeetCode102](./LeetCode/LeetCode102.md) <br />[从前序与中序遍历序列构造二叉树---LeetCode105](./LeetCode/LeetCode105.md) <br />[收集树上所有苹果---LeetCode5406(碰见树就GG)](./LeetCode/LeetCode5406.md) <br />[另一个树的子树---LeetCode572](./LeetCode/LeetCode572.md) <br />
 二叉树|[不同的二叉搜索树II---LeetCode95](./LeetCode/LeetCode95.md) <br />[二叉树的最近公共祖先---LeetCode236(后序遍历实现自底向上查找)](./LeetCode/LeetCode236.md) <br />[平衡二叉树---LeetCode110](./LeetCode/LeetCode110.md) <br />[二叉树里的最大路径和---LeetCode124(别再错了)](./LeetCode/LeetCode124.md) <br />[验证二叉搜索树---LeetCode98](./LeetCode/LeetCode98.md) <br />
 矩阵|[最大正方形---LeetCode221(能想到怎么dp就很简单的dp)](./LeetCode/LeetCode221.md) <br />

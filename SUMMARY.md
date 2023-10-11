@@ -158,6 +158,8 @@
     * [LeetCode-weekly205](./algorithms/LeetCode/LeetCode-weekly205.md)
     * [LeetCode-FallContest2020](./algorithms/LeetCode/LeetCode-FallContest2020.md)
     * [LeetCode-FallContest2022](./algorithms/LeetCode/LeetCode-FallContest2022.md)
+  * [CodeForces](./algorithms/CodeForces/README.md)
+    * [Decreasing String](./algorithms/CodeForces/dict_order.md)
     
 
   

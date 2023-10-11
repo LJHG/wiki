@@ -1,5 +1,6 @@
 标签|题目
 -|-|
+单调栈|[删除一个元素让字典序最小](./CodeForces/dict_order.md) <br />[柱状图中最大的矩形---LeetCode84(单调栈)](./LeetCode/LeetCode84.md) <br />[美丽塔---LeetCode2866(单调栈)](./LeetCode/LeetCode2866.md) <br />
 二叉搜索树|[有序链表转换二叉搜索树---LeetCode109](./LeetCode/LeetCode109.md) <br />[不同的二叉搜索树II---LeetCode95](./LeetCode/LeetCode95.md) <br />
 BST|[有序链表转换二叉搜索树---LeetCode109](./LeetCode/LeetCode109.md) <br />[把二叉搜索树转换为累加树---LeetCode538](./LeetCode/LeetCode538.md) <br />[验证二叉搜索树---LeetCode98](./LeetCode/LeetCode98.md) <br />
 链表|[有序链表转换二叉搜索树---LeetCode109](./LeetCode/LeetCode109.md) <br />[排序链表---LeetCode148](./LeetCode/LeetCode148.md) <br />[LRU缓存机制---LeetCode146(链表好像变香了)](./LeetCode/LeetCode146.md) <br />[合并K个排序链表](./LeetCode/LeetCode23.md) <br />[K个一组翻转链表---LeetCode25(指针地狱)](./LeetCode/LeetCode25.md) <br />
@@ -45,7 +46,6 @@ map|[205周赛记录---(学会用map+并查集太强了)](./LeetCode/LeetCode-we
 |[秋季编程大赛记录](./LeetCode/LeetCode-FallContest2020.md) <br />[乘积最大子数组---LeetCode152(不会真的有人以为是前缀和吧)](./LeetCode/LeetCode152.md) <br />[收藏清单---LeetCode5414(能线性扫就别搞两重循环了)](./LeetCode/LeetCode5414.md) <br />[找出数组游戏的赢家---LeetCode5476](./LeetCode/LeetCode5476.md) <br />[2022秋季编程大赛记录](./LeetCode/LeetCode-FallContest2022.md) <br />[零钱兑换II---LeetCode518(完全背包)](./LeetCode/LeetCode518.md) <br />
 组合|[组合---LeetCode77(不小心把组合做成排列了)](./LeetCode/LeetCode77.md) <br />
 排列|[组合---LeetCode77(不小心把组合做成排列了)](./LeetCode/LeetCode77.md) <br />[全排列Ⅱ---LeetCode47(去重)](./LeetCode/LeetCode47.md) <br />[下一个排列---LeetCode31(新的思路)](./LeetCode/LeetCode31.md) <br />
-单调栈|[柱状图中最大的矩形---LeetCode84(单调栈)](./LeetCode/LeetCode84.md) <br />[美丽塔---LeetCode2866(单调栈)](./LeetCode/LeetCode2866.md) <br />
 stack|[柱状图中最大的矩形---LeetCode84(单调栈)](./LeetCode/LeetCode84.md) <br />[二叉树中序遍历---LeetCode94(递归和栈)](./LeetCode/LeetCode94.md) <br />
 bfs|[寻宝---LCP13(bfs+状压dp)](./LeetCode/LeetCode-LCP13.md) <br />[二叉树层序遍历----LeetCode102](./LeetCode/LeetCode102.md) <br />[最小基因变化---LeetCode433(bfs)](./LeetCode/LeetCode433.md) <br />
 状态压缩|[寻宝---LCP13(bfs+状压dp)](./LeetCode/LeetCode-LCP13.md) <br />

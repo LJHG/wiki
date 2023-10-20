@@ -34,7 +34,7 @@ Stack|[Leetcode445两数相加(Stack)](./LeetCode/Leetcode445.md) <br />[二叉�
 不要乱用dp|[可获得最大点数（乱用DP=炸内存）](./LeetCode/LeetCode5393.md) <br />
 BinarySerach|[山顶数组中查找目标值(二分法)--LeetCode1095](./LeetCode/LeetCode1095.md) <br />
 排列组合|[组合总和---LeetCode39(wsl)](./LeetCode/LeetCode39.md) <br />[组合总和3---LeetCode216](./LeetCode/LeetCode216.md) <br />[组合总和2---LeetCode40(答案去重)](./LeetCode/LeetCode40.md) <br />
-回溯|[组合总和---LeetCode39(wsl)](./LeetCode/LeetCode39.md) <br />[组合---LeetCode77(不小心把组合做成排列了)](./LeetCode/LeetCode77.md) <br />[全排列Ⅱ---LeetCode47(去重)](./LeetCode/LeetCode47.md) <br />[解数独---LeetCode37(优化的力量)](./LeetCode/LeetCode37.md) <br />[N皇后---LeetCode51(递归和回溯还是有区别的)](./LeetCode/LeetCode51.md) <br />[组合总和3---LeetCode216](./LeetCode/LeetCode216.md) <br />[组合总和2---LeetCode40(答案去重)](./LeetCode/LeetCode40.md) <br />[重新安排行程---LeetCode332(STL)](./LeetCode/LeetCode332.md) <br />
+回溯|[组合总和---LeetCode39(wsl)](./LeetCode/LeetCode39.md) <br />[组合---LeetCode77(不小心把组合做成排列了)](./LeetCode/LeetCode77.md) <br />[全排列Ⅱ---LeetCode47(去重)](./LeetCode/LeetCode47.md) <br />[统计子树中城市最大距离---LeetCode1617(子集+树形dp)](./LeetCode/LeetCode1617.md) <br />[解数独---LeetCode37(优化的力量)](./LeetCode/LeetCode37.md) <br />[N皇后---LeetCode51(递归和回溯还是有区别的)](./LeetCode/LeetCode51.md) <br />[组合总和3---LeetCode216](./LeetCode/LeetCode216.md) <br />[组合总和2---LeetCode40(答案去重)](./LeetCode/LeetCode40.md) <br />[重新安排行程---LeetCode332(STL)](./LeetCode/LeetCode332.md) <br />
 BFS|[用BFS解决交换问题---LeetCode854(BFS)](./LeetCode/LeetCode854.md) <br />[删除无效的括号---LeetCode301(BFS)](./LeetCode/LeetCode301.md) <br />[完全平方数---LeetCode279(DP/BFS)](./LeetCode/LeetCode279.md) <br />
 智力题|[到达终点---LeetCode780](./LeetCode/LeetCode780.md) <br />[加油站---LeetCode134(morethan模拟)](./LeetCode/LeetCode134.md) <br />
 map|[205周赛记录---(学会用map+并查集太强了)](./LeetCode/LeetCode-weekly205.md) <br />[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />
@@ -57,6 +57,7 @@ bfs|[寻宝---LCP13(bfs+状压dp)](./LeetCode/LeetCode-LCP13.md) <br />[二叉�
 去重|[全排列Ⅱ---LeetCode47(去重)](./LeetCode/LeetCode47.md) <br />
 拓扑排序|[课程表---LeetCode210(拓扑排序)](./LeetCode/LeetCode210.md) <br />
 哈希|[LRU缓存机制---LeetCode146(链表好像变香了)](./LeetCode/LeetCode146.md) <br />[找到字符串中所有字符异位词---LeetCode428(双指针哈希表)](./LeetCode/LeetCode428.md) <br />
+树形dp|[统计子树中城市最大距离---LeetCode1617(子集+树形dp)](./LeetCode/LeetCode1617.md) <br />[二叉树里的最大路径和---LeetCode124(别再错了)](./LeetCode/LeetCode124.md) <br />[统计树中的合法路径数目---LeetCode2867(树形dp)](./LeetCode/LeetCode2867.md) <br />
 list|[合并K个排序链表](./LeetCode/LeetCode23.md) <br />
 集合|[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />
 set|[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />[绝对值差不超过限制的最长连续子数组---LeetCode5402](./LeetCode/LeetCode5402.md) <br />
@@ -76,7 +77,6 @@ set|[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />[绝对�
 堆|[前K个高频元素---LeetCode347(优先队列)](./LeetCode/LeetCode347.md) <br />
 模拟|[加油站---LeetCode134(morethan模拟)](./LeetCode/LeetCode134.md) <br />
 快速幂|[Pow(x,n)---LeetCode50(快速幂)](./LeetCode/LeetCode50.md) <br />
-树形dp|[二叉树里的最大路径和---LeetCode124(别再错了)](./LeetCode/LeetCode124.md) <br />[统计树中的合法路径数目---LeetCode2867(树形dp)](./LeetCode/LeetCode2867.md) <br />
 邻接表|[收集树上所有苹果---LeetCode5406(碰见树就GG)](./LeetCode/LeetCode5406.md) <br />
 背包问题|[Leetcode_coins](./LeetCode/LeetCode-coins.md) <br />
 回文串|[LeetCode05](./LeetCode/LeetCode05.md) <br />

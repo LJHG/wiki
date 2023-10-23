@@ -97,3 +97,5 @@ DP|[完全平方数---LeetCode279(DP/BFS)](./LeetCode/LeetCode279.md) <br />
 分析|[除数博弈---LeetCode1025(智力题)](./LeetCode/LeetCode1025.md) <br />
 双序列dp|[两个子序列的最大点积---LeetCode1458(双序列dp)](./LeetCode/LeetCode1458.md) <br />
 哈希去重|[递增子序列---LeetCode491(dp失败QAQ)](./LeetCode/LeetCode491.md) <br />
+最短路|[Dijkstra最短路，以及2N节点](./AtCoder/abc325_e.md) <br />
+dijkstra|[Dijkstra最短路，以及2N节点](./AtCoder/abc325_e.md) <br />

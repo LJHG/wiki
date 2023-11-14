@@ -72,6 +72,7 @@ set|[旅行终点站---LeetCode5400](./LeetCode/LeetCode5400.md) <br />[绝对�
 链表找环|[快乐数---LeetCode202判断链表环](./LeetCode/LeetCode202.md) <br />
 字符串数组|[重新排列句子中的单词---LeetCode5413(在排序时长度相同的保持相对位置不变)](./LeetCode/LeetCode5413.md) <br />
 贪心|[跳跃游戏---LeetCode45](./LeetCode/LeetCode45.md) <br />[盛最多水的容器---LeetCode11(贪心双指针)](./LeetCode/LeetCode11.md) <br />[排布二进制网格的最少交换次数---LeetCode5477](./LeetCode/LeetCode5477.md) <br />
+字典树|[找出强数对的最大异或值---LeetCode2395(字典树)](./LeetCode/LeetCode2395.md) <br />
 记忆化搜索|[二叉树灯饰---LeetCode-LCP64(树形dp记忆化搜索)](./LeetCode/LeetCode-LCP64.md) <br />
 优先队列|[前K个高频元素---LeetCode347(优先队列)](./LeetCode/LeetCode347.md) <br />
 堆|[前K个高频元素---LeetCode347(优先队列)](./LeetCode/LeetCode347.md) <br />

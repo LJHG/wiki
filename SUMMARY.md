@@ -131,6 +131,7 @@
     * [LeetCode1617](./algorithms/LeetCode/LeetCode1617.md)
     * [LeetCode1823](./algorithms/LeetCode/LeetCode1823.md)
     * [LeetCode2385](./algorithms/LeetCode/LeetCode2585.md)
+    * [LeetCode2395](./algorithms/LeetCode/LeetCode2395.md)
     * [LeetCode2400](./algorithms/LeetCode/LeetCode2400.md)
     * [LeetCode2528](./algorithms/LeetCode/LeetCode2528.md)
     * [LeetCode2560](./algorithms/LeetCode/LeetCode2560.md)

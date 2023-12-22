@@ -29,7 +29,6 @@
     * [用scatter函数计算onehot](MLDLRL/ML/scatter_onehot.md)
   * [深度学习](MLDLRL/DL/README.md)
     * [mac pytorch mps尝鲜](MLDLRL/DL/pytorch-mps.md)
-    * [batch与并行计算速度的讨论](MLDLRL/DL/batch-and-speed.md)
     * [使用larq对BNN从训练到部署](MLDLRL/DL/bnndemo.md)
   * [强化学习](MLDLRL/RL/README.md)
     * [value&policy iteration](MLDLRL/RL/value&policy_iteration.md)

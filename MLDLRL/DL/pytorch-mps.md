@@ -6,7 +6,7 @@ tags: [mac, pytorch]
 # mac pytorch gpu加速尝鲜(
 > 日期: 2023-12-22
 
-前段时间就听说mac好像支持gpu加速了，当时似乎是pytorch官方发了一个[Introducing Accelerated PyTorch Training on Mac | PyTorch](https://pytorch.org/blog/introducing-accelerated-pytorch-training-on-mac/) (卧槽原来已经一年了)，我记得刚出的时候是只支持cpu来着，难道说一开始就支持mps了🤔？无所谓了，反正我一直没用过。
+前段时间就听说mac好像支持gpu加速了，当时似乎是pytorch官方发了一个博客[Introducing Accelerated PyTorch Training on Mac | PyTorch](https://pytorch.org/blog/introducing-accelerated-pytorch-training-on-mac/) (卧槽原来已经一年了)，我记得刚出的时候是只支持cpu来着，难道说一开始就支持mps了🤔？无所谓了，反正我一直没用过。
 
 然后最近突然发现pytorch竟然已经更新到2.1了，pytorch给mac提供了一个叫做MPS (Metal Performance Shaders)的东西，来实现gpu加速（苹果真的得给这些社区磕头）。
 

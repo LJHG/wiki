@@ -1,0 +1,7 @@
+on: push
+
+jobs:
+  publish_site:
+    runs-on: ubuntu-latest
+    steps:
+    - run: publish.sh

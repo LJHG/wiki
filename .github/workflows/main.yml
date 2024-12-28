@@ -26,7 +26,7 @@ jobs:
         git config --global user.name "LJHG"
         git config --global user.email "674478778@qq.com"
 
-    - name: Push Sites
+    - name: Push Sites to Another Repository
       env:
-        GITHUB_TOKEN: ${{ secrets.PASSWORD }}
-      run: ./publish.sh
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: ./publish.sh ${{ secrets.GITHUB_TOKEN }}

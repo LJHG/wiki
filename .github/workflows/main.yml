@@ -4,25 +4,31 @@ jobs:
   publish_site:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v4
+      # Step 1: 检出当前代码库
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-    - name: Debug Current Directory
-      run: |
-        pwd
-        ls -a
+      # Step 2: 调试当前目录（可选）
+      - name: Debug Current Directory
+        run: |
+          pwd
+          ls -a
 
-    - name: Install GitBook
-      run: npm install gitbook-cli@2.1.2 --global
-      run: gitbook -V
-      run: gitbook install
+      # Step 3: 安装 GitBook CLI 并验证
+      - name: Install GitBook
+        run: |
+          npm install gitbook-cli@2.1.2 --global
+          gitbook -V
+          gitbook install
 
-    - name: Configure Git
-      run: |
-        git config --global user.name "LJHG"
-        git config --global user.email "674478778@qq.com"
+      # Step 4: 配置 Git 用户信息
+      - name: Configure Git
+        run: |
+          git config --global user.name "LJHG"
+          git config --global user.email "674478778@qq.com"
 
-    - name: Push Sites
-      env:
-        PASSWORD: ${{ secrets.PASSWORD }}
-      run: ./publish.sh
+      # Step 5: 推送到目标仓库
+      - name: Push Sites
+        env:
+          PASSWORD: ${{ secrets.PASSWORD }}
+        run: ./publish.sh

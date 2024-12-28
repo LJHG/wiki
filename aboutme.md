@@ -1,6 +1,6 @@
 # About me
 
-Hi, I'm Junhua Long, currently a third-year master's student in Sun Yat-sen University. I'm expected to graduate in Summer 2024.
+Hi, I'm Junhua Long.
 
 I'm broadly interested in  backend/infrastructure development, computer graphics and point cloud processing.
 
@@ -10,7 +10,7 @@ I'm broadly interested in  backend/infrastructure development, computer graphics
 
 - Master of Engineering in 2024, School of Computer Science and Engineering
 
-  **Sun Yat-sen University**, Guangzhou, China, 09/2021 – 06/2024 (expected)
+  **Sun Yat-sen University**, Guangzhou, China, 09/2021 – 06/2024
 
 - Bachelor of Engineering, School of Computer Science
 

@@ -4,10 +4,29 @@ jobs:
   publish_site:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - run: npm install gitbook-cli@2.1.2 --global
-    - run: gitbook -V
-    - run: gitbook install 
-    - run: pwd
-    - run: ls -a
-    - run: ./publish.sh
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Debug Current Directory
+      run: |
+        pwd
+        ls -a
+
+    - name: Install GitBook CLI
+      run: npm install gitbook-cli@2.1.2 --global
+
+    - name: Check GitBook Version
+      run: gitbook -V
+
+    - name: Install GitBook Plugins
+      run: gitbook install
+
+    - name: Configure Git
+      run: |
+        git config --global user.name "LJHG"
+        git config --global user.email "674478778@qq.com"
+
+    - name: Push Sites
+      env:
+        GITHUB_TOKEN: ${{ secrets.PASSWORD }}
+      run: ./publish.sh

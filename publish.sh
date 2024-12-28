@@ -2,27 +2,31 @@
 REPO_URL="https://github.com/LJHG/ljhg.github.io.git"
 BRANCH="master"  # 使用 master 作为分支名
 
-# 检查并创建 mysite 文件夹
-if [ ! -d "./mysite" ]; then
-    mkdir mysite
-    cd ./mysite
-    git init
-    git remote add origin $REPO_URL
-    cd ..
+# 检查并创建 mysite 文件夹（在父级目录）
+if [ ! -d "../mysite" ]; then
+    mkdir ../mysite
 fi
 
-# 构建新内容到 mysite 文件夹
-gitbook build . ./mysite
+# 构建新内容到 ../mysite 文件夹
+gitbook build . ../mysite
 if [ $? -ne 0 ]; then
     echo "Error: GitBook build failed!"
     exit 1
 fi
 
-# 进入 mysite 并提交更改
-cd ./mysite
+# 进入 mysite 文件夹并初始化 git 仓库
+cd ../mysite
 
-# 切换到 master 分支（如果不存在则创建）
-git checkout $BRANCH || git checkout -b $BRANCH
+# 初始化或更新 Git 仓库
+if [ ! -d ".git" ]; then
+    git init
+    git remote add origin $REPO_URL
+    git checkout -b $BRANCH  # 如果没有分支则创建 master 分支
+else
+    git remote set-url origin $REPO_URL
+    git fetch origin
+    git checkout $BRANCH || git checkout -b $BRANCH
+fi
 
 # 提交并推送更改
 git add -A

@@ -4,6 +4,7 @@ jobs:
   publish_site:
     runs-on: ubuntu-latest
     steps:
+    - run: actions/checkout@v4
     - run: pwd
     - run: ls -a
     - run: publish.sh

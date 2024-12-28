@@ -31,7 +31,7 @@ fi
 # 提交并推送更改
 git add -A
 git commit -m "Initial commit: Update site content from GitBook"
-git push -u origin $BRANCH
+git push -u origin $BRANCH -f
 if [ $? -ne 0 ]; then
     echo "Error: Failed to push changes to $REPO_URL"
     exit 1

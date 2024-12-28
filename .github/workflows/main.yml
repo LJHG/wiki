@@ -4,4 +4,5 @@ jobs:
   publish_site:
     runs-on: ubuntu-latest
     steps:
+    - run: pwd
     - run: publish.sh

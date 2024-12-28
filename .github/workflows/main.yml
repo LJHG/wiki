@@ -12,13 +12,9 @@ jobs:
         pwd
         ls -a
 
-    - name: Install GitBook CLI
+    - name: Install GitBook
       run: npm install gitbook-cli@2.1.2 --global
-
-    - name: Check GitBook Version
       run: gitbook -V
-
-    - name: Install GitBook Plugins
       run: gitbook install
 
     - name: Configure Git
@@ -26,7 +22,7 @@ jobs:
         git config --global user.name "LJHG"
         git config --global user.email "674478778@qq.com"
 
-    - name: Push Sites to Another Repository
+    - name: Push Sites
       env:
         PASSWORD: ${{ secrets.PASSWORD }}
       run: ./publish.sh

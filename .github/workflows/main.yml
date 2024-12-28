@@ -28,5 +28,5 @@ jobs:
 
     - name: Push Sites to Another Repository
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: ./publish.sh ${{ secrets.GITHUB_TOKEN }}
+        PASSWORD: ${{ secrets.PASSWORD }}
+      run: ./publish.sh

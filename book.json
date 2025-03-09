@@ -10,7 +10,8 @@
         "github",
         "expandable-chapters-small",
         "katex",
-        "intopic-toc"
+        "intopic-toc",
+        "sitemap"
     ],
     "pluginsConfig": {
         "github": {

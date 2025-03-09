@@ -16,7 +16,10 @@
         "github": {
             "url": "https://github.com/LJHG"
         },
-        "expandable-chapters-small":{}
+        "expandable-chapters-small":{},
+        "sitemap": {
+            "hostname": "https://ljhg.github.io/"
+        }
     },
     "styles": {
         "website": "styles/website.css",
@@ -25,5 +28,5 @@
         "mobi": "styles/mobi.css",
         "epub": "styles/epub.css"
     }
-    
+
 }

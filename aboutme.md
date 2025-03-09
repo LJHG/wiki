@@ -2,7 +2,7 @@
 
 Hi, I'm Junhua Long.
 
-I'm broadly interested in  backend/infrastructure development, computer graphics and point cloud processing.
+I'm broadly interested in ML backend/infrastructure development, computer graphics and point cloud processing.
 
 
 

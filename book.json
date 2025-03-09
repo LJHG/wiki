@@ -10,17 +10,13 @@
         "github",
         "expandable-chapters-small",
         "katex",
-        "intopic-toc",
-        "sitemap"
+        "intopic-toc"
     ],
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/LJHG"
         },
-        "expandable-chapters-small":{},
-        "sitemap": {
-            "hostname": "https://ljhg.github.io/"
-        }
+        "expandable-chapters-small":{}
     },
     "styles": {
         "website": "styles/website.css",

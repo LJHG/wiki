@@ -1,8 +1,13 @@
 # About me
 
-Hi, I'm Junhua Long.
-
-I'm broadly interested in ML backend/infrastructure development, computer graphics and point cloud processing.
+<div style="display: flex; align-items: center; gap: 2rem; max-width: 1000px; margin: 2rem auto;">
+  <img src="images/me_at_bali.jpg" alt="me" style="width: 40%; border-radius: 8px;">
+  <div style="flex: 1; line-height: 1.6;">
+    <p>I'm broadly interested in ML backend/infrastructure development, computer graphics and point cloud processing.</p>
+    <p>During my graduate studies, my research focused on compressing point cloud data using a Transformer-based deep entropy model.</p>
+    <p>Currently, I work as a Software Engineer on the TikTok E-commerce Recommendation Team, where I focus on model infrastructure development.</p>
+  </div>
+</div>
 
 
 

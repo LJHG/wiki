@@ -31,4 +31,5 @@ jobs:
       - name: Push Sites
         env:
           PASSWORD: ${{ secrets.PASSWORD }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: ./publish.sh

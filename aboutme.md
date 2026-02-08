@@ -4,8 +4,8 @@
   <img src="images/me_at_bali.jpg" alt="me" style="width: 35%; border-radius: 8px; margin-top: 0; max-height: 220px; object-fit: cover;">
   <div style="flex: 1; line-height: 1.6; margin-top: 0;">
     <p style="margin: 0 0 0.5rem 0;">Hi I'm Junuha Long. I'm broadly interested in ML backend/infrastructure development, computer graphics and point cloud processing.</p>
-    <p style="margin: 0 0 0.5rem 0;">During my graduate studies, my research focused on compressing point cloud data using a Transformer-based deep entropy model.</p>
-    <p style="margin: 0;">Currently, I work as a Software Engineer on the TikTok E-commerce Recommendation Team, where I focus on model infrastructure development.</p>
+    <p style="margin: 0 0 0.5rem 0;">Previously during my graduate studies, my research focused on compressing point cloud data using a Transformer-based deep entropy model.</p>
+    <p style="margin: 0;">Currently, I work as a Software Engineer on the TikTok E-commerce Recommendation Team, where I focus on large recommendation model infra.</p>
   </div>
 </div>
 

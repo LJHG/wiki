@@ -1,7 +1,7 @@
 # THE publish depends on github actions. DO NOT run this script loaclly unless you insist to.
 
 # 设置目标仓库的 URL 和分支
-REPO_URL="https://${PASSWORD}@github.com/LJHG/ljhg.github.io.git"
+REPO_URL="https://${GH_TOKEN}@github.com/LJHG/ljhg.github.io.git"
 BRANCH="master"  # 使用 master 作为分支名
 
 # 检查并创建 mysite 文件夹（在父级目录）
